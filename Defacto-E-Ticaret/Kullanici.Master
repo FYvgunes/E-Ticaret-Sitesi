@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="Defacto_E_Ticaret.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="description" content="E-Ticaret">
+    <meta name="author" content="Güneş Yazılım">
+    <meta name="keywords" content="Web Ödevim">
+    <meta name="vieport" content="width-device-width initial-scale-1.0">
+    <title>DeFacto - Home </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/slider.js" type="text/javascript"></script>
+    <script src="scripts/Jquery.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .auto-style2 {
+            width: 917px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="slider1">
+            <img src="img/icon/slider1.png">
+        </div>
+         
+        <div class="container">
+            <div class="col6">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/icon/defacto-logo-png-1.png"></a>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="menu">
+                    <div class="Deneme">
+                        <ul class="list1">
+                            <li><a href="index.html">AnaSayfa</a></li>
+                            <li><a href="cars.html">Ürünler</a></li>
+                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="contact.html">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col4">
+                <div class="menu2">
+                    <ul class="list2">
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i>Sepet</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i>Üye ol</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Giriş</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="slider2">
+            <img src="img/Slider/slider.png">
+        </div>
+        <div id="slider-wrapper">
+            <div class="inner-wrapper">
+                <input checked type="radio" name="slide" class="control" id="Slide1" />
+                <label for="Slide1" id="s1"></label>
+                <input type="radio" name="slide" class="control" id="Slide2" />
+                <label for="Slide2" id="s2"></label>
+                <input type="radio" name="slide" class="control" id="Slide3" />
+                <label for="Slide3" id="s3"></label>
+                <input type="radio" name="slide" class="control" id="Slide4" />
+                <label for="Slide4" id="s4"></label>
+
+
+                <div class="overflow-wrapper">
+                    <a class="slide" href="#">
+                        <img src="img/Slider/slider5.png" /></a>
+                    <a class="slide" href="#">
+                        <img src="img/Slider/slider3.png" /></a>
+                    <a class="slide" href="#">
+                        <img src="img/Slider/slider4.png" /></a>
+                    <a class="slide" href="#">
+                        <img src="img/Slider/slider6.png" /></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <footer class="sectionArea">
+        <div class="footeritemcontainer">
+            <div class="footertop">
+                <img src="img/Footer/FooterTop.png" />
+            </div>
+
+            <div class="Footercontainer">
+
+                <div class="col3">
+                    <div class="footeritem">
+                        <h3>DeFacto</h3>
+                        <ul class="FooterLinks">
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footeritem">
+                        <div class="FooterLinks">
+                            <h3>Müşteri Hizmetleri</h3>
+                            <ul>
+                                <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                                <li><a href="#">Kargo Ve Teslimat</a></li>
+                                <li><a href="#">İade VE Değişim</a></li>
+                                <li><a href="#">Kampanyalar</a></li>
+                                <li><a href="#">Gizlilik ve Kişisel verileri Koruma Kanunu</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footeritem">
+                        <div class="FooterLinks">
+                            <h3>Bize Ulaşın</h3>
+                            <ul>
+                                <li><a href="#">İletişim Formu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footeritem">
+                        <h3>Bizi Takip Edin</h3>
+                        <ul class="socialLinks">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerbottom" id="footeritemcontainer">
+                <img src="img/Footer/footerbottom.png" />
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
