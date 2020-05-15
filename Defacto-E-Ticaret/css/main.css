@@ -206,6 +206,23 @@ header .logo {
 .col6{
     width:25%;
 }
+.col {
+    padding: 10px;
+    
+}
+.container2 {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 19% 19% 19% 19%;
+    margin-left: 160px;
+    height: auto;
+}
+.Urunlerimg{
+    height:400px;
+}
+.Urunlerimg img{
+    height:100%;
+}
 
 
 
