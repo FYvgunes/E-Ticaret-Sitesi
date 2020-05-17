@@ -7,8 +7,16 @@
         <asp:Repeater id="tekrar" runat="server">
             <itemtemplate>
             <div class="ResimRow">
-                 <div class="Urunlerimg">
+                 <div class="Urunlerimg" id="zoom">
                         <img src="img/erkek/<%# Eval("Fotolar") %>" alt="Alternate Text" />
+                      <div style=" width:375px;
+        height:50px;">
+                         <a tabindex="1"><img style="height:100%; width:10%;" src="img/erkek/erkek1.png" /></a>
+                         <a tabindex="2"><img style="height:100%;" src="img/erkek/erkek2.png" /></a>
+                         <a tabindex="3"><img style="height:100%;" src="img/erkek/erkek3.png" /></a>
+                         <a tabindex="4"><img style="height:100%;" src="img/erkek/erkek4.png" /></a>
+                         <a tabindex="5"><img style="height:100%;" src="img/erkek/erkek5.png" /></a>
+                     </div>
                     </div>
             </div>
             <div class="Aciklama">
@@ -17,16 +25,16 @@
                       <div class="metinler">
                    
                   
-                   <div class="deneme"><span class="Samp2">Kullanılan Malzeme:</span> &nbsp;<span class="Samp1"><%# Eval("UrunOzellik") %></span></div>
-                   <div class="deneme"><span class="Samp2">Renk :</span> &nbsp;<span class="Samp1"><%# Eval("UrunRenk") %></span></div>
-                   <div class="deneme"><span class="Samp2">Kesim Biçimi :</span> &nbsp;<span class="Samp1"><%# Eval("UrunOzellik2") %></span></div>
-                   <div class="deneme"><span class="Samp2">Cinsiyet :</span> &nbsp;<span class="Samp1"><%# Eval("UrunCins") %></span></div>
-                   <div class="deneme"><span class="Samp2">Beden</span> &nbsp;<span class="Samp1"><%# Eval("UrunBeden") %></span></div>
+                   <div class="deneme"><p class="Samp2">Kullanılan Malzeme:</p> &nbsp;<p class="Samp1"><%# Eval("UrunOzellik") %></p></div>
+                   <div class="deneme"><p class="Samp2">Renk :</p> &nbsp;<p class="Samp1"><%# Eval("UrunRenk") %></p></div>
+                   <div class="deneme"><p class="Samp2">Kesim Biçimi :</p> &nbsp;<p class="Samp1"><%# Eval("UrunOzellik2") %></p></div>
+                   <div class="deneme"><p class="Samp2">Cinsiyet :</p> &nbsp;<p class="Samp1"><%# Eval("UrunCins") %></p></div>
+                   <div class="deneme"><p class="Samp2">Beden</p> &nbsp;<p class="Samp1"><%# Eval("UrunBeden") %></p></div>
                    <div class="deneme1"><p><%#Eval("UrunFiyat","{0:c}") %> </p></div>
                          
                           
                          
-                   <div class="deneme"><p><a href="#" ><i style="padding-right: 2px" class="fas fa-shopping-bag"></i>Sepet Ekle</a></p></div>
+                   <div class="deneme"><a href="#" class="button" ><i style="padding-right: 2px" class="fas fa-shopping-bag"></i>Sepet Ekle</a></div>
                    
 
                 </div>

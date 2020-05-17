@@ -30,20 +30,20 @@
 <body>
     <header>
         <div class="slider1">
-            <img src="img/icon/slider1.png">
+            <img  src="img/icon/slider1.png">
         </div>
          
         <div class="container">
             <div class="col6">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="Default.aspx">
                         <img src="img/icon/defacto-logo-png-1.png"></a>
                 </div>
             </div>
             <div class="col2">
                 <div class="menu">
                         <ul class="list1">
-                            <li><a href="index.html">AnaSayfa</a></li>
+                            <li><a href="Default.aspx">AnaSayfa</a></li>
                             <li><a href="cars.html">Ürünler</a>
                                 <ul class="list3">
                                     <li><a href="#">Kadın</a></li>

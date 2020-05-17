@@ -6,7 +6,7 @@
     <div class="container2">
         <asp:Repeater ID="tekrarlayici" runat="server">
             <ItemTemplate>
-
+               
                 <div class="col">
                     <div class="Urunlerimg">
                         <a href="UrunDetay.aspx?urunid=<%#Eval("Urunid") %>"><img src="img/erkek/<%# Eval("Fotolar") %>" alt="Alternate Text" /></a>

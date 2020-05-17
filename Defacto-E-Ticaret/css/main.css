@@ -149,20 +149,36 @@ h3 {
 }
 /*Ürün DEtay*/
 .ResimRow {
-    width: 45%;
+    width: 30%;
     margin: 20px;
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 175px;
+    padding:0;
 }
 
     .ResimRow .Urunlerimg img {
         border: 3px solid #ccc;
         padding: 5px;
+        
+    }
+#zoom img {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    #zoom img:hover {
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
     }
 
 .Aciklama {
-    width: 75%;
-   height:375px;
+    width: 55%;
+    height:450px;
     margin: 20px;
     margin-top: 43px;
     margin-right: 300px;
@@ -170,11 +186,14 @@ h3 {
 
     .Aciklama .cizgi {
         border: 3px solid #ccc;
+        border-radius:7px;
         padding: 25px;
-        height:325px;
+        height:335px;
+        width:100%;
     }
 
 .metinler .Samp2 {
+   
     padding: 10px;
     background: #ffbb99;
     padding: 10px;
@@ -189,24 +208,30 @@ h3 {
     padding: 10px;
 }
 .metinler p{
+   
     font-size:15px;
     letter-spacing:1px;
     color:#333;
     line-height:5px;
 }
 .deneme{
-    margin-bottom:25px;
+    display:flex;
+    flex-direction:inherit;
+    margin-bottom:10px;
+    font-size:15px;
+    align-items:center;
 }
 
-    .deneme a {
+    .deneme .button  {
         text-decoration: none;
         background: #00b377;
         padding: 10px 15px;
-        margin-left: 235px;
+        margin-left: 205px;
         border-radius: 3px;
         color: #fff;
         font-weight: 500;
         transition: .5s ease;
+
     }
         .deneme a:hover {
             background: #1affb2;
@@ -215,8 +240,8 @@ h3 {
             font-size:25px;
             font-weight:600;
             letter-spacing:1px;
-            margin-left:250px;
-            margin-bottom:23px;
+            margin-left:220px;
+            margin-bottom:15px;
         }
        
 /*HOME SETTİNG */
@@ -335,7 +360,7 @@ ul.list1 li:hover .list3 {
 .container3 {
     display: grid;
     grid-gap: 1em;
-    grid-template-columns: height: 10px;
+    grid-template-columns:  10px;
     margin-left: 120px;
     margin-right: 120px;
     height: auto;
