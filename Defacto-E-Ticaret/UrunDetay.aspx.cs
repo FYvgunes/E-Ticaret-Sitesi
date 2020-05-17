@@ -9,21 +9,18 @@ using System.Data.SqlClient;
 
 namespace Defacto_E_Ticaret
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class UrunDetay : System.Web.UI.Page
     {
         Sqlbaglanti bgl = new Sqlbaglanti();
         
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler where UrunCins='K' ", bgl.baglanti());
+            string id = Request.QueryString["urunid"];
+            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler where urunid="+id, bgl.baglanti());
             DataTable dt = new DataTable();
             komut.Fill(dt);
-            tekrarlayici.DataSource = dt;
-            tekrarlayici.DataBind();
-            bgl.baglanti().Close();
-
-
+            tekrar.DataSource = dt;
+            tekrar.DataBind();
 
 
         }
