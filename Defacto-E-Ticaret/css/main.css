@@ -177,26 +177,26 @@ h3 {
     }
 
 .Aciklama {
-    width: 55%;
-    height:450px;
+    width: 70%;
+    height:380px;
     margin: 20px;
     margin-top: 43px;
-    margin-right: 300px;
+    margin-right: 400px;
 }
 
     .Aciklama .cizgi {
         border: 3px solid #ccc;
         border-radius:7px;
         padding: 25px;
-        height:335px;
+        height:100%;
         width:100%;
     }
 
 .metinler .Samp2 {
    
-    padding: 10px;
+    padding: 15px;
     background: #ffbb99;
-    padding: 10px;
+    
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -205,19 +205,19 @@ h3 {
 
 .metinler .Samp1 {
     background: #ffffe6;
-    padding: 10px;
+    padding: 15px;
 }
-.metinler p{
-   
-    font-size:15px;
-    letter-spacing:1px;
-    color:#333;
-    line-height:5px;
+.metinler p {
+    padding: 7px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 5px;
 }
 .deneme{
     display:flex;
     flex-direction:inherit;
-    margin-bottom:10px;
+    margin-bottom:5px;
     font-size:15px;
     align-items:center;
 }
@@ -226,7 +226,7 @@ h3 {
         text-decoration: none;
         background: #00b377;
         padding: 10px 15px;
-        margin-left: 205px;
+        margin-left: 210px;
         border-radius: 3px;
         color: #fff;
         font-weight: 500;
@@ -240,9 +240,10 @@ h3 {
             font-size:25px;
             font-weight:600;
             letter-spacing:1px;
-            margin-left:220px;
+            margin-left:215px;
             margin-bottom:15px;
         }
+
        
 /*HOME SETTİNG */
 header .logo {
@@ -556,4 +557,111 @@ ul.list1 li:hover .list3 {
 .slide img {
     width: 25%;
     float: left;
+}
+
+/*ÜYE OL*/
+.contactTop {
+    text-align: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.contactFrom {
+    margin: 0 auto;
+    width: 100%;
+    display:flex;
+    flex-direction:inherit;
+}
+.Requ{
+    margin:15px;
+    color:red;
+    font-size:12px;
+    letter-spacing:1px;
+    font-weight:bold;
+    }
+.textbax{
+    color:#333;
+    font-size:15px;
+    padding:10px 2px;
+    margin:3px 5px;
+    border-radius:5px;
+    width:250px;
+}
+.fromitem {
+    margin-bottom: 10px;
+    width: 100%;
+    float:left;
+}
+.Fromİte1{
+    float;left;
+}
+.FormPE{
+    font-size:15px;
+    padding:5px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.fromshape {
+    color: #fff;
+    float: left;
+    background: #0a560a;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+
+.formfield {
+    color: #fff;
+    background: #0a560a;
+    border: none;
+    padding: 15.5px;
+    width: 92%;
+    display: block;
+    font-size: 16px;
+}
+
+.formbtn {
+    display: block;
+    border: none;
+    background: #0a560a;
+    margin: 8px auto;
+    color: #fff;
+    padding: 15px 35px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s ease;
+}
+    .formbtn:hover {
+        background: #339933;
+        color:#f3f3f3;
+    }
+
+.Aciklama1 {
+    width: 50%;
+    height: 100%;
+    margin: 20px;
+    margin-top: 43px;
+    margin-right: 300px;
+}
+
+    .Aciklama1 .cizgi1 {
+        border: 3px solid #ccc;
+        border-radius: 7px;
+        padding: 25px;
+        height: 100%;
+        width: 100%;
+        margin-left:260px;
+    }
+.Deneme2 {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 15px;
+    
 }

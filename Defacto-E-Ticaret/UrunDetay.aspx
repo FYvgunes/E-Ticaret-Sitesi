@@ -1,21 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="UrunDetay.aspx.cs" Inherits="Defacto_E_Ticaret.UrunDetay" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+   
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <div class="container">
         <asp:Repeater id="tekrar" runat="server">
             <itemtemplate>
             <div class="ResimRow">
                  <div class="Urunlerimg" id="zoom">
-                        <img src="img/erkek/<%# Eval("Fotolar") %>" alt="Alternate Text" />
-                      <div style=" width:375px;
-        height:50px;">
-                         <a tabindex="1"><img style="height:100%; width:10%;" src="img/erkek/erkek1.png" /></a>
+                        <img id="test" src="img/erkek/<%# Eval("Fotolar") %>" alt="Alternate Text" />
+                      
+                      <div style=" width:375px;height:70px;">
+        
+                         <img class="dene" style="height:100%; width:10%;" src="img/erkek/erkek1.png" />
                          <a tabindex="2"><img style="height:100%;" src="img/erkek/erkek2.png" /></a>
                          <a tabindex="3"><img style="height:100%;" src="img/erkek/erkek3.png" /></a>
                          <a tabindex="4"><img style="height:100%;" src="img/erkek/erkek4.png" /></a>
-                         <a tabindex="5"><img style="height:100%;" src="img/erkek/erkek5.png" /></a>
+                         
                      </div>
                     </div>
             </div>
@@ -43,7 +47,11 @@
               
 
             </div>
+                  
+                    
         </itemtemplate>
         </asp:Repeater>
     </div>
+     
+    
 </asp:Content>
