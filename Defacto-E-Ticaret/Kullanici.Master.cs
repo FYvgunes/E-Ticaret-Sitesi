@@ -11,7 +11,18 @@ namespace Defacto_E_Ticaret
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["kullanici"]==null)
+            {
+                kull.InnerHtml = "Merhaba Ziyaretçi";
+                cikisid.Visible = false;
+            }
+            else
+            {
+                kull.InnerHtml = "Merhaba"+" " + Session["Kullanici"].ToString();
+                girisid.Visible = false;
+                cikisid.Visible = true;
 
+            }
         }
     }
 }

@@ -49,9 +49,9 @@
                             <li><a href="Default.aspx">AnaSayfa</a></li>
                             <li><a href="cars.html">Ürünler</a>
                                 <ul class="list3">
-                                    <li><a href="#">Kadın</a></li>
-                                    <li><a href="#">Erkek</a></li>
-                                    <li><a href="#">Çoçuk</a></li>
+                                    <li><a href="KadınReyon.aspx">Kadın</a></li>
+                                    <li><a href="ErkekReyonu.aspx">Erkek</a></li>
+                                    <li><a href="CocukReyon.aspx">Çoçuk</a></li>
                                 </ul>
                             </li>
                             <li><a href="about.html">Hakkımızda</a></li>
@@ -65,9 +65,12 @@
             <div class="col4">
                 <div class="menu2">
                     <ul class="list2">
-                        <li><a href="#"><i class="fas fa-shopping-bag"></i>Sepet</a></li>
-                        <li><a href="#"><i class="fas fa-user"></i>Üye ol</a></li>
-                        <li><a href="#"><i class="fas fa-sign-out-alt"></i>Giriş</a></li>
+                        
+                        <li><a href="Sepet.aspx"><i class="fas fa-shopping-bag"></i>Sepet</a></li>
+                        <li><a href="UyeOl.aspx"><i class="fas fa-user"></i>Üye ol</a></li>
+                        <li><a href="UserLogin.aspx" id="girisid" runat="server"><i class="fas fa-sign-in-alt"></i>Giriş</a></li>
+                        <li><a href="UserOut.aspx" id="cikisid" runat="server"><i class="fas fa-sign-out-alt"></i>Çıkış</a></li>
+                        <li><a style="font-size:15px; color:#ff6a00; margin-top:2px;" href="#" id="kull" runat="server"></a></li>
                     </ul>
                 </div>
             </div>

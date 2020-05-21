@@ -1,10 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="UyeOl.aspx.cs" Inherits="Defacto_E_Ticaret.UyeOl" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="container">
+     <div class="container">
         <div class="Aciklama1">
             <div class="cizgi1">
                
@@ -67,8 +65,11 @@
 
                 </div>
                 <div>
-                    <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Üye Ol" />
+                    <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Üye Ol" OnClick="Button1_Click1" />
+                    
+                    <asp:Label CssClass="FormKayitLabel"  ID="Label1" runat="server" Visible="False" Font-Bold="True" Font-Size="Large"></asp:Label>
                 </div>
+                
 
             </div>
         </div>

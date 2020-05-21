@@ -11,61 +11,61 @@ namespace Defacto_E_Ticaret
 {
 
 
-    public partial class Kullanici
+    public partial class SepeteEkle
     {
 
         /// <summary>
-        /// head control.
+        /// resim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.HtmlControls.HtmlImage resim;
 
         /// <summary>
-        /// form1 control.
+        /// resim1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlImage resim1;
 
         /// <summary>
-        /// girisid control.
+        /// sonuc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor girisid;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sonuc;
 
         /// <summary>
-        /// cikisid control.
+        /// sonuc2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor cikisid;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sonuc2;
 
         /// <summary>
-        /// kull control.
+        /// sonuc3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor kull;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl sonuc3;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// tekrar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Repeater tekrar;
     }
 }

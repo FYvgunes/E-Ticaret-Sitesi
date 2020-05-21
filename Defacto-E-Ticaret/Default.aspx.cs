@@ -16,7 +16,7 @@ namespace Defacto_E_Ticaret
         protected void Page_Load(object sender, EventArgs e)
         {
            
-            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler where UrunCins='Erkek' ", bgl.baglanti());
+            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler", bgl.baglanti());
             DataTable dt = new DataTable();
             komut.Fill(dt);
             tekrarlayici.DataSource = dt;
@@ -27,5 +27,7 @@ namespace Defacto_E_Ticaret
 
 
         }
+
+        
     }
 }

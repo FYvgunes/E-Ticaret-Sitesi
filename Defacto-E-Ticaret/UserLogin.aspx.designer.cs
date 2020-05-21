@@ -11,17 +11,8 @@ namespace Defacto_E_Ticaret
 {
 
 
-    public partial class Kullanici
+    public partial class UserLogin
     {
-
-        /// <summary>
-        /// head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
         /// form1 control.
@@ -33,39 +24,39 @@ namespace Defacto_E_Ticaret
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// girisid control.
+        /// txt_kullaniciAd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor girisid;
+        protected global::System.Web.UI.WebControls.TextBox txt_kullaniciAd;
 
         /// <summary>
-        /// cikisid control.
+        /// Txt_Sifre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor cikisid;
+        protected global::System.Web.UI.WebControls.TextBox Txt_Sifre;
 
         /// <summary>
-        /// kull control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor kull;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

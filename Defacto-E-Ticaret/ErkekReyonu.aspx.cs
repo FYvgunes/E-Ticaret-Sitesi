@@ -9,19 +9,22 @@ using System.Data.SqlClient;
 
 namespace Defacto_E_Ticaret
 {
-    public partial class UrunDetay : System.Web.UI.Page
+    public partial class ErkekReyonu : System.Web.UI.Page
     {
         Sqlbaglanti bgl = new Sqlbaglanti();
-        
         protected void Page_Load(object sender, EventArgs e)
         {
-           
-            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler", bgl.baglanti());
+
+            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler where UrunCins='Erkek' ", bgl.baglanti());
             DataTable dt = new DataTable();
             komut.Fill(dt);
-            tekrar.DataSource = dt;
-            tekrar.DataBind();
+            tekrarlayici.DataSource = dt;
+            tekrarlayici.DataBind();
+            bgl.baglanti().Close();
+        }
 
+        protected void tekrarlayici_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
 
         }
     }

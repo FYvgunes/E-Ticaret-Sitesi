@@ -67,11 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CocukReyon.aspx" />
     <Content Include="css\all.css" />
     <Content Include="css\all.min.css" />
     <Content Include="css\fontawesome.min.css" />
     <Content Include="css\main.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ErkekReyonu.aspx" />
     <Content Include="img\erkek\erkek1.png" />
     <Content Include="img\erkek\erkek2.png" />
     <Content Include="img\erkek\erkek3.png" />
@@ -95,16 +97,23 @@
     <Content Include="img\kadın\kadın8.png" />
     <Content Include="img\kadın\kadın9.png" />
     <Content Include="css\reset.css" />
+    <Content Include="img\logo-ok-png-2.png" />
     <Content Include="img\Slider\slider.png" />
     <Content Include="img\Slider\slider2.png" />
     <Content Include="img\Slider\slider3.png" />
     <Content Include="img\Slider\slider4.png" />
     <Content Include="img\Slider\slider5.png" />
     <Content Include="img\Slider\slider6.png" />
+    <Content Include="img\unnamed.png" />
     <Content Include="jquery-3.5.1.min.js" />
+    <Content Include="KadınReyon.aspx" />
     <Content Include="scripts\Jquery.js" />
     <Content Include="scripts\slider.js" />
+    <Content Include="Sepet.aspx" />
+    <Content Include="SepeteEkle.aspx" />
     <Content Include="UrunDetay.aspx" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="UserOut.aspx" />
     <Content Include="UyeOl.aspx" />
     <Content Include="Web.config" />
     <Content Include="webfonts\fa-brands-400.svg" />
@@ -113,12 +122,33 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CocukReyon.aspx.cs">
+      <DependentUpon>CocukReyon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CocukReyon.aspx.designer.cs">
+      <DependentUpon>CocukReyon.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErkekReyonu.aspx.cs">
+      <DependentUpon>ErkekReyonu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErkekReyonu.aspx.designer.cs">
+      <DependentUpon>ErkekReyonu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KadınReyon.aspx.cs">
+      <DependentUpon>KadınReyon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KadınReyon.aspx.designer.cs">
+      <DependentUpon>KadınReyon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kullanici.Master.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
@@ -128,6 +158,20 @@
       <DependentUpon>Kullanici.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepet.aspx.cs">
+      <DependentUpon>Sepet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sepet.aspx.designer.cs">
+      <DependentUpon>Sepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SepeteEkle.aspx.cs">
+      <DependentUpon>SepeteEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SepeteEkle.aspx.designer.cs">
+      <DependentUpon>SepeteEkle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sqlbaglanti.cs" />
     <Compile Include="UrunDetay.aspx.cs">
       <DependentUpon>UrunDetay.aspx</DependentUpon>
@@ -135,6 +179,20 @@
     </Compile>
     <Compile Include="UrunDetay.aspx.designer.cs">
       <DependentUpon>UrunDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserOut.aspx.cs">
+      <DependentUpon>UserOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserOut.aspx.designer.cs">
+      <DependentUpon>UserOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="UyeOl.aspx.cs">
       <DependentUpon>UyeOl.aspx</DependentUpon>
