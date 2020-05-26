@@ -49,6 +49,7 @@ namespace Defacto_E_Ticaret
 
                         sonuc.InnerHtml = "Ürün Zaten Eklenmiş";
                         sonuc2.InnerHtml = "Alişverişe Devam";
+
                         resim1.Visible = false;
                         bgl.baglanti().Close();
                     }
@@ -71,7 +72,7 @@ namespace Defacto_E_Ticaret
 
             
             
-
+                                                            
         }
     }
 }

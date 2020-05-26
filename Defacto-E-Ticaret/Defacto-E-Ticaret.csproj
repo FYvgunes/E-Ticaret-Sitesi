@@ -67,6 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminDefault.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminUrunEkle.aspx" />
+    <Content Include="AdminUrunler.aspx" />
+    <Content Include="AdminYorumDetay.aspx" />
+    <Content Include="AdminYorumlar.aspx" />
+    <Content Include="img\res1.png" />
+    <Content Include="img\res2.png" />
+    <Content Include="img\res3.png" />
+    <Content Include="KategoriDetay.aspx" />
+    <Content Include="Kategoriler.aspx" />
     <Content Include="CocukReyon.aspx" />
     <Content Include="css\all.css" />
     <Content Include="css\all.min.css" />
@@ -74,20 +85,22 @@
     <Content Include="css\main.css" />
     <Content Include="Default.aspx" />
     <Content Include="ErkekReyonu.aspx" />
-    <Content Include="img\erkek\erkek1.png" />
-    <Content Include="img\erkek\erkek2.png" />
-    <Content Include="img\erkek\erkek3.png" />
-    <Content Include="img\erkek\erkek4.png" />
-    <Content Include="img\erkek\erkek5.png" />
-    <Content Include="img\erkek\erkek6.png" />
-    <Content Include="img\erkek\erkek7.png" />
-    <Content Include="img\erkek\erkek8.png" />
-    <Content Include="img\erkek\erkek9.png" />
+    <Content Include="img\erkek1.png" />
+    <Content Include="img\erkek2.png" />
+    <Content Include="img\erkek3.png" />
+    <Content Include="img\erkek4.png" />
+    <Content Include="img\erkek5.png" />
+    <Content Include="img\erkek6.png" />
+    <Content Include="img\erkek7.png" />
+    <Content Include="img\erkek8.png" />
+    <Content Include="img\erkek9.png" />
     <Content Include="img\Footer\footerbottom.png" />
     <Content Include="img\Footer\FooterTop.png" />
     <Content Include="img\icon\defacto-logo-png-1.png" />
+    <Content Include="img\icon\Delete.png" />
     <Content Include="img\icon\slider.png" />
     <Content Include="img\icon\slider1.png" />
+    <Content Include="img\icon\update.png" />
     <Content Include="img\kadın\kadın10.png" />
     <Content Include="img\kadın\kadın3.png" />
     <Content Include="img\kadın\kadın4.png" />
@@ -122,6 +135,69 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUrunEkle.aspx.cs">
+      <DependentUpon>AdminUrunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUrunEkle.aspx.designer.cs">
+      <DependentUpon>AdminUrunEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUrunler.aspx.cs">
+      <DependentUpon>AdminUrunler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUrunler.aspx.designer.cs">
+      <DependentUpon>AdminUrunler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYorumDetay.aspx.cs">
+      <DependentUpon>AdminYorumDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminYorumDetay.aspx.designer.cs">
+      <DependentUpon>AdminYorumDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminYorumlar.aspx.cs">
+      <DependentUpon>AdminYorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminYorumlar.aspx.designer.cs">
+      <DependentUpon>AdminYorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.designer.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CocukReyon.aspx.cs">
       <DependentUpon>CocukReyon.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,6 +291,7 @@
     <Content Include="img\kadın\kadın2.webp" />
     <Content Include="img\icon\ramazan_0946fba5-9e16-4446-991c-154cef7a764b_fc849a6b-832c-4644-aba7-fa97bbd171c3_DI_227.webp" />
     <Content Include="Kullanici.Master" />
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -236,6 +313,9 @@
     <Content Include="webfonts\fa-solid-900.woff2" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ADMİN\" />
+    <Folder Include="img\erkek\" />
+    <Folder Include="img\NewFolder1\" />
     <Folder Include="img\çoçuk\" />
   </ItemGroup>
   <PropertyGroup>

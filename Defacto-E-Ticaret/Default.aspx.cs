@@ -12,22 +12,22 @@ namespace Defacto_E_Ticaret
     public partial class Default : System.Web.UI.Page
     {
         Sqlbaglanti bgl = new Sqlbaglanti();
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
            
-            SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler", bgl.baglanti());
-            DataTable dt = new DataTable();
-            komut.Fill(dt);
-            tekrarlayici.DataSource = dt;
-            tekrarlayici.DataBind();
-            bgl.baglanti().Close();
+                SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler", bgl.baglanti());
+                DataTable dt = new DataTable();
+                komut.Fill(dt);
+                tekrarlayici.DataSource = dt;
+                tekrarlayici.DataBind();
+                bgl.baglanti().Close();
+           
+           
 
 
 
 
         }
-
-        
     }
 }

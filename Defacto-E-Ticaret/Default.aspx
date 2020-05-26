@@ -4,12 +4,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container2">
-        <asp:Repeater ID="tekrarlayici" runat="server" >
+        <asp:Repeater ID="tekrarlayici" runat="server"  >
             <ItemTemplate>
                
                 <div class="col">
                     <div class="Urunlerimg">
-                        <a href="UrunDetay.aspx?urunid=<%#Eval("Urunid") %>"><img src="img/erkek/<%# Eval("Fotolar") %>" alt="Alternate Text" /></a>
+                        <a href="UrunDetay.aspx?urunid=<%#Eval("Urunid") %>">
+                            <asp:Image  ImageUrl='<%# Eval("Fotolar") %>' ID="Image1" runat="server" /></a>
 
                     </div>
                     <div class="Urunbaslik">
