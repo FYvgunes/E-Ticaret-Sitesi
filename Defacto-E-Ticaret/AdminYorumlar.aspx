@@ -37,7 +37,7 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("YorumAdSoyad") %>'></asp:Label>
                         </td>
                         <td class="image_icon">
-                            <a href="AdminYorumDetay.aspx?Yorumid=<%# Eval("Yorumİd") %>">"
+                            <a href="AdminYorumDetay.aspx?Yorumid=<%# Eval("Yorumİd") %>">
                                 <asp:Image class="image_icon" ID="Image1" runat="server" ImageUrl="~/img/icon/update.png" /></a>
                         </td>
                         <td class="image_icon">

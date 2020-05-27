@@ -5,8 +5,7 @@
 <html>
 <head runat="server">
    
-    <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+   
      <meta charset="UTF-8">
     <meta name="description" content="E-Ticaret">
     <meta name="author" content="Güneş Yazılım">
@@ -121,7 +120,7 @@
                     <td class="A_menuler_tr"><a style="color:#fff;" href="AdminUrunler.aspx">ÜRÜNLER</a></td>
                 </tr>
                 <tr>
-                    <td class="A_menuler_tr"><a href="Yorumlar.aspx" style="color:#fff;">YORUMLAR</a> </td>
+                    <td class="A_menuler_tr"><a href="AdminYorumlar.aspx" style="color:#fff;">YORUMLAR</a> </td>
                 </tr>
                 <tr>
                     <td class="A_menuler_tr"><a style="color:#fff;" href="#">MESAJLAR</a></td>

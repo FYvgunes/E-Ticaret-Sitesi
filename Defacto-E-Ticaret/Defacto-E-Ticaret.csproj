@@ -73,6 +73,8 @@
     <Content Include="AdminUrunler.aspx" />
     <Content Include="AdminYorumDetay.aspx" />
     <Content Include="AdminYorumlar.aspx" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="img\iletişim-banner.png" />
     <Content Include="img\res1.png" />
     <Content Include="img\res2.png" />
     <Content Include="img\res3.png" />
@@ -184,6 +186,13 @@
     <Compile Include="AdminYorumlar.aspx.designer.cs">
       <DependentUpon>AdminYorumlar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
     <Compile Include="KategoriDetay.aspx.cs">
       <DependentUpon>KategoriDetay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -232,6 +241,13 @@
     </Compile>
     <Compile Include="Kullanici.Master.designer.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı2.Master.cs">
+      <DependentUpon>Kullanıcı2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı2.Master.designer.cs">
+      <DependentUpon>Kullanıcı2.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sepet.aspx.cs">
@@ -292,6 +308,7 @@
     <Content Include="img\icon\ramazan_0946fba5-9e16-4446-991c-154cef7a764b_fc849a6b-832c-4644-aba7-fa97bbd171c3_DI_227.webp" />
     <Content Include="Kullanici.Master" />
     <Content Include="Admin.Master" />
+    <Content Include="Kullanıcı2.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
