@@ -123,7 +123,7 @@
                     <td class="A_menuler_tr"><a href="AdminYorumlar.aspx" style="color:#fff;">YORUMLAR</a> </td>
                 </tr>
                 <tr>
-                    <td class="A_menuler_tr"><a style="color:#fff;" href="#">MESAJLAR</a></td>
+                    <td class="A_menuler_tr"><a style="color:#fff;" href="Adminiletisim.aspx">MESAJLAR</a></td>
                 </tr>
                 <tr>
                     <td class="A_menuler_tr"><a style="color:#fff;" href="#">ÇOK SATANLAR</a></td>

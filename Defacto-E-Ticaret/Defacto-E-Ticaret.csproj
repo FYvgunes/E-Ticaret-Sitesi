@@ -68,12 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminDefault.aspx" />
+    <Content Include="Adminiletisim.aspx" />
+    <Content Include="AdminiletisimDetay.aspx" />
     <Content Include="AdminLogin.aspx" />
     <Content Include="AdminUrunEkle.aspx" />
     <Content Include="AdminUrunler.aspx" />
     <Content Include="AdminYorumDetay.aspx" />
     <Content Include="AdminYorumlar.aspx" />
     <Content Include="iletisim.aspx" />
+    <Content Include="img\details-png-4.png" />
     <Content Include="img\iletişim-banner.png" />
     <Content Include="img\res1.png" />
     <Content Include="img\res2.png" />
@@ -150,6 +153,20 @@
     </Compile>
     <Compile Include="AdminDefault.aspx.designer.cs">
       <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminiletisim.aspx.cs">
+      <DependentUpon>Adminiletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminiletisim.aspx.designer.cs">
+      <DependentUpon>Adminiletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminiletisimDetay.aspx.cs">
+      <DependentUpon>AdminiletisimDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminiletisimDetay.aspx.designer.cs">
+      <DependentUpon>AdminiletisimDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>

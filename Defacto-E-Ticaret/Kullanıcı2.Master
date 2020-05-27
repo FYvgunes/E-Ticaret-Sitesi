@@ -80,5 +80,67 @@
             </asp:ContentPlaceHolder>
         </header>
     </form>
+     <footer class="sectionArea">
+        <div class="footeritemcontainer">
+            <div class="footertop">
+                <img src="img/Footer/FooterTop.png" />
+            </div>
+
+            <div class="Footercontainer">
+
+                <div class="col3">
+                    <div class="footeritem">
+                        <h3>DeFacto</h3>
+                        <ul class="FooterLinks">
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="#">Kurumsal</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footeritem">
+                        <div class="FooterLinks">
+                            <h3>Müşteri Hizmetleri</h3>
+                            <ul>
+                                <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                                <li><a href="#">Kargo Ve Teslimat</a></li>
+                                <li><a href="#">İade VE Değişim</a></li>
+                                <li><a href="#">Kampanyalar</a></li>
+                                <li><a href="#">Gizlilik ve Kişisel verileri Koruma Kanunu</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="footeritem">
+                        <div class="FooterLinks">
+                            <h3>Bize Ulaşın</h3>
+                            <ul>
+                                <li><a href="#">İletişim Formu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footeritem">
+                        <h3>Bizi Takip Edin</h3>
+                        <ul class="socialLinks">
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerbottom" id="footeritemcontainer">
+                <img src="img/Footer/footerbottom.png" />
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>

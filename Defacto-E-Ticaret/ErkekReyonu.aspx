@@ -8,7 +8,7 @@
                
                 <div class="col">
                     <div class="Urunlerimg">
-                        <a href="UrunDetay.aspx?urunid=<%#Eval("Urunid") %>"><img src="img/erkek/<%# Eval("Fotolar") %>" alt="Alternate Text" /></a>
+                        <a href="UrunDetay.aspx?urunid=<%#Eval("Urunid") %>"> <asp:Image  ImageUrl='<%# Eval("Fotolar") %>' ID="Image1" runat="server" /></a></a>
 
                     </div>
                     <div class="Urunbaslik">

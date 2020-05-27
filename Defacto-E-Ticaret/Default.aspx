@@ -28,4 +28,27 @@
         </asp:Repeater>
 
     </div>
+     <!--   Galary Section-->
+    <section id="gallery" class="sectionArea">
+       
+        <div class="galleryBody">
+            <div class="container">
+                <div class="gallerySlider">
+                    <div class="galleryslideritem">
+
+                        <img src="img/erkek1.png" alt="">
+                        <img src="img/erkek2.png" alt="">
+                        <img src="img/erkek3.png" alt="">
+                        <img src="img/erkek4.png" alt="">
+                        <img src="img/erkek5.png" alt="">
+                        <img src="img/erkek6.png" alt="">
+                        <img src="img/erkek7.png" alt="">
+                        <img src="img/erkek8.png" alt="">
+                        <img src="img/erkek8.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </asp:Content>

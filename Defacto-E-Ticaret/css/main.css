@@ -651,6 +651,76 @@ ul.list1 li:hover .list3 {
     text-align: center;
     margin-left: 195px;
 }
+.galleryTop {
+    text-align: center;
+}
+
+.gallerySlider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.galleryslideritem {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    left: 0;
+    animation: sliderAnimation 30s infinite;
+}
+
+    .galleryslideritem img {
+        width: 11%;
+        float: left;
+        height: 300px;
+    }
+
+@keyframes sliderAnimation {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: -10%;
+    }
+
+    25% {
+        left: -25%;
+    }
+
+    35% {
+        left: -35%;
+    }
+
+    45% {
+        left: -50%;
+    }
+
+
+    50% {
+        left: -100%;
+    }
+
+    60% {
+        left: -80%;
+    }
+
+    70% {
+        left: -70%;
+    }
+
+    80% {
+        left: -60%;
+    }
+
+    80% {
+        left: -40%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
 
 .Aciklama1 {
     width: 50%;
@@ -828,6 +898,12 @@ ul.list1 li:hover .list3 {
 .contactTop {
     text-align: center;
 }*/
-
-
-
+.label {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    margin-left: 225px;
+}

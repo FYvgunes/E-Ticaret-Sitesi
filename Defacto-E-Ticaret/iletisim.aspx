@@ -130,7 +130,7 @@
 
     .Aciklama6 .cizgi4 {
         border: 3px solid #ccc;
-        background:#ccc;
+        background:#e5e1e4;
         border-radius: 7px;
         padding: 25px;
         height: 100%;
@@ -153,8 +153,8 @@
     <!--   Galary Section-->
     <section id="gallery" class="sectionArea">
         <div class="galleryTop">
-            <h2 class="sectionHeader">GALERİ</h2>
-            <p>İÇERİKLERİMİZ</p>
+            <h2 style="text-align: center; font-size: 25px; color: #182ea7; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">GALERİ</h2><p style="text-align:center;">İÇERİKLERİMİZ</p>
+                <hr style="border: 1px solid #1d2a74" />
         </div>
         <div class="galleryBody">
             <div class="container">
@@ -205,7 +205,7 @@
                 <div class="Deneme2">
                     <p class="FormPE">Konu</p>
                     <p>
-                        <asp:TextBox CssClass="textbax" ID="Txt_konu"  Width="550px"  runat="server" TextMode="MultiLine" Height="50px"></asp:TextBox>
+                        <asp:TextBox CssClass="textbax" ID="Txt_konu"  Width="650px"  runat="server" TextMode="MultiLine" Height="50px"></asp:TextBox>
                         <asp:RequiredFieldValidator CssClass="Requ" ID="RequiredFieldValidator4" runat="server" ErrorMessage="Konu Kısmı Boş geçilmez" ControlToValidate="Txt_konu"></asp:RequiredFieldValidator>
                     </p>
                 </div>
@@ -214,16 +214,16 @@
                         İçerik
                     </p>
                     <p>
-                        <asp:TextBox CssClass="textbax" ID="Txt_icerik" runat="server" TextMode="MultiLine" Height="80px" Width="550px"></asp:TextBox>
+                        <asp:TextBox CssClass="textbax" ID="Txt_icerik" runat="server" TextMode="MultiLine" Height="80px" Width="650px"></asp:TextBox>
                         <asp:RequiredFieldValidator CssClass="Requ" ID="RequiredFieldValidator5" runat="server" ErrorMessage="İçerik kısmı boş geçilemez" ControlToValidate="Txt_icerik"></asp:RequiredFieldValidator>
 
                     </p>
                 </div>
                
                 <div>
-                    <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Üye Ol" />
+                    <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Üye Ol" OnClick="Button1_Click1"  />
 
-                    <asp:Label CssClass="FormKayitLabel" ID="Label1" runat="server" Visible="False" Font-Bold="True" Font-Size="Large"></asp:Label>
+                    <asp:Label CssClass="label" ID="Label1" runat="server" Visible="False" Font-Bold="True" Font-Size="Large"></asp:Label>
                 </div>
 
 
