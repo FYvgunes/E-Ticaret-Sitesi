@@ -125,11 +125,9 @@
                 <tr>
                     <td class="A_menuler_tr"><a style="color:#fff;" href="Adminiletisim.aspx">MESAJLAR</a></td>
                 </tr>
+              
                 <tr>
-                    <td class="A_menuler_tr"><a style="color:#fff;" href="#">ÇOK SATANLAR</a></td>
-                </tr>
-                <tr>
-                    <td class="A_menuler_tr"><a style="color:#fff;" href="#">ŞİKAYETLER</a></td>
+                    <td class="A_menuler_tr"><a style="color:#fff;" href="AdminSikayet.aspx">ŞİKAYETLER</a></td>
                 </tr>
                
 

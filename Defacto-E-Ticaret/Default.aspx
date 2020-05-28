@@ -30,12 +30,13 @@
     </div>
      <!--   Galary Section-->
     <section id="gallery" class="sectionArea">
-       
+        <h2 style="text-align: center; font-size: 25px; color: #182ea7; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">ÇOK SATANLAR</h2><p style="text-align:center;"></p>
+                <hr style="border: 1px solid #1d2a74" />
         <div class="galleryBody">
             <div class="container">
                 <div class="gallerySlider">
                     <div class="galleryslideritem">
-
+                        
                         <img src="img/erkek1.png" alt="">
                         <img src="img/erkek2.png" alt="">
                         <img src="img/erkek3.png" alt="">

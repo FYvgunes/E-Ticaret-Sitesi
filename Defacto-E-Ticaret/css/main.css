@@ -666,11 +666,13 @@ ul.list1 li:hover .list3 {
     margin-top: 10px;
     position: relative;
     left: 0;
+    
     animation: sliderAnimation 30s infinite;
 }
 
     .galleryslideritem img {
         width: 11%;
+        
         float: left;
         height: 300px;
     }
@@ -713,7 +715,7 @@ ul.list1 li:hover .list3 {
         left: -60%;
     }
 
-    80% {
+    90% {
         left: -40%;
     }
 
@@ -906,4 +908,8 @@ ul.list1 li:hover .list3 {
     margin: 5px;
     text-align: center;
     margin-left: 225px;
+}
+.td{
+    text-align:left;
+
 }

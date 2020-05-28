@@ -119,10 +119,10 @@
                     <div class="footeritem">
                         <h3>DeFacto</h3>
                         <ul class="FooterLinks">
-                            <li><a href="#">Kurumsal</a></li>
-                            <li><a href="#">Kurumsal</a></li>
-                            <li><a href="#">Kurumsal</a></li>
-                            <li><a href="#">Kurumsal</a></li>
+                            <li><a href="Default.aspx">Anasayfa</a></li>
+                            <li><a href="ErkekReyonu.aspx">Ürünler</a></li>
+                            <li><a href="iletisim.aspx">İletişim</a></li>
+                            <li><a href="Sikayetler.aspx">Şikayetler</a></li>
 
                         </ul>
                     </div>

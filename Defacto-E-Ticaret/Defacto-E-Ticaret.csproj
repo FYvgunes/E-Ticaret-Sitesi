@@ -71,13 +71,18 @@
     <Content Include="Adminiletisim.aspx" />
     <Content Include="AdminiletisimDetay.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminSikayet.aspx" />
+    <Content Include="AdminSikayetDetay.aspx" />
     <Content Include="AdminUrunEkle.aspx" />
     <Content Include="AdminUrunler.aspx" />
     <Content Include="AdminYorumDetay.aspx" />
     <Content Include="AdminYorumlar.aspx" />
     <Content Include="iletisim.aspx" />
     <Content Include="img\details-png-4.png" />
+    <Content Include="img\finance.jpg" />
     <Content Include="img\iletişim-banner.png" />
+    <Content Include="img\images.png" />
+    <Content Include="img\Klanttevredenheid.png" />
     <Content Include="img\res1.png" />
     <Content Include="img\res2.png" />
     <Content Include="img\res3.png" />
@@ -129,6 +134,7 @@
     <Content Include="scripts\slider.js" />
     <Content Include="Sepet.aspx" />
     <Content Include="SepeteEkle.aspx" />
+    <Content Include="Sikayetler.aspx" />
     <Content Include="UrunDetay.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserOut.aspx" />
@@ -174,6 +180,20 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSikayet.aspx.cs">
+      <DependentUpon>AdminSikayet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSikayet.aspx.designer.cs">
+      <DependentUpon>AdminSikayet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSikayetDetay.aspx.cs">
+      <DependentUpon>AdminSikayetDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSikayetDetay.aspx.designer.cs">
+      <DependentUpon>AdminSikayetDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminUrunEkle.aspx.cs">
       <DependentUpon>AdminUrunEkle.aspx</DependentUpon>
@@ -280,6 +300,13 @@
     </Compile>
     <Compile Include="SepeteEkle.aspx.designer.cs">
       <DependentUpon>SepeteEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sikayetler.aspx.cs">
+      <DependentUpon>Sikayetler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sikayetler.aspx.designer.cs">
+      <DependentUpon>Sikayetler.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sqlbaglanti.cs" />
     <Compile Include="UrunDetay.aspx.cs">

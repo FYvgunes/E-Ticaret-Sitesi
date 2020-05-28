@@ -11,7 +11,7 @@ namespace Defacto_E_Ticaret
 {
     public partial class Sepet : System.Web.UI.Page
     {
-       
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,8 +19,10 @@ namespace Defacto_E_Ticaret
 
         }
 
+        protected void btnSepeteEkle_Click(object sender, EventArgs e)
+        {
 
 
-
+        }
     }
 }
