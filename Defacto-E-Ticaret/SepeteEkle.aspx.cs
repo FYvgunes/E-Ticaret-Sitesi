@@ -24,7 +24,7 @@ namespace Defacto_E_Ticaret
             else
             {
                 //Grişi işlemi yapılmış mı 
-                if(Session["Kullanici"]==null)
+                if (Session["Kullanici"] == null)
                 {
                     resim1.Visible = true;
                     sonuc.InnerHtml = "Kullanıci Girişi yapılmamış";
@@ -33,13 +33,13 @@ namespace Defacto_E_Ticaret
                 }
                 else
                 {
-                    //urun daha önceden eklenmiş mi 
+                    //urun daha önceden eklenmiş mi
                     string urunid = Request.QueryString["urunid"];
                     SqlCommand komut = new SqlCommand("Select *From Tbl_Sepetler where uyeid=@p1 and Urunid=@p2", bgl.baglanti());
                     komut.Parameters.AddWithValue("@p1", Session["id"].ToString());
                     komut.Parameters.AddWithValue("@p2", urunid);
                     SqlDataReader rd = komut.ExecuteReader();
-                    if(rd.Read())
+                    if (rd.Read())
                     {
                         SqlDataAdapter komut3 = new SqlDataAdapter("select * From Tbl_urunler where urunid=" + urunid, bgl.baglanti());
                         DataTable dt = new DataTable();
@@ -63,16 +63,16 @@ namespace Defacto_E_Ticaret
                         bgl.baglanti().Close();
                         sonuc3.InnerHtml = "Ürün Sepete Eklenmiştir";
                         resim.Visible = true;
-                         
+
                     }
 
                 }
 
             }
 
-            
-            
-                                                            
+
+
+
         }
     }
 }

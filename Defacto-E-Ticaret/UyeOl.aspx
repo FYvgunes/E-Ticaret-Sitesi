@@ -3,8 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div class="container">
-        <div class="Aciklama1">
-            <div class="cizgi1">
+        <div class="Aciklama1" style="margin-right:400px;">
+            <div class="cizgi1" style="margin-left:150px;">
                
                 
                 <h2 style="text-align:center; font-size:25px; color:#182ea7; letter-spacing:1px; font-weight:bold;text-transform:uppercase;">Üye ol</h2>

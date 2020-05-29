@@ -1,122 +1,83 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="Sepet.aspx.cs" Inherits="Defacto_E_Ticaret.Sepet" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style3 {
+            width: 252px;
+            padding:5px;
+
+        }
+
+        .auto-style4 {
+            width: 120px;
+            padding:5px;
+        }
+
+        .auto-style5 {
+            width: 500px;
+            padding:5px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div>
-            <table style="text-align: left; width: 400px">
-                <tr>
-                    <td>
-                        <asp:Label ID="Label1" runat="server" Text="Ürün ID"></asp:Label>
-                    </td>
-                    <td>:
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtID" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label ID="Label2" runat="server" Text="Ürün Adı"></asp:Label>
-                    </td>
-                    <td>:
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtAdi" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label ID="Label3" runat="server" Text="Fiyat"></asp:Label>
-                    </td>
-                    <td>:
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtFiyat" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label ID="Label4" runat="server" Text="Adet"></asp:Label>
-                    </td>
-                    <td>:
-                    </td>
-                    <td>
-                        <asp:TextBox ID="txtAdet" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;
-                    </td>
-                    <td>&nbsp;
-                    </td>
-                    <td>
-                        <asp:Button ID="btnSepeteEkle" runat="server" Text="Sepete Ekle" OnClick="btnSepeteEkle_Click" />
-                    </td>
-                </tr>
-            </table>
-            <asp:DataList ID="DataList1" runat="server" CellPadding="4" OnItemCommand="DataList1_ItemCommand"
-                ForeColor="#333333" BorderColor="Black" BorderWidth="1px" CellSpacing="2" Font-Bold="False"
-                Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False"
-                HorizontalAlign="Center" ShowFooter="False">
-                <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
-                <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
-                <ItemStyle BackColor="#DEDFDE" ForeColor="Black" />
-                <SelectedItemStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                <HeaderTemplate>
-                    <table style="text-align: left; width: 400px;">
+        <div class="Aciklama3">
+            <div class="cizgi3" style="width:150%; margin-left:100px;">
+                <div>
+
+                    <h3 style="text-align: center; color: red; font-size: 20px; padding: 5px; margin: 6px;" id="sonuc" runat="server"></h3>
+                    <h4 style="text-align: center; font-size: 17px; padding: 5px; margin: 6px;" id="H1" runat="server"></h4>
+
+                    <h3 style="font-size: 15px; text-align: center; padding: 5px; margin: 6px; color: green;" id="sonuc3" runat="server"></h3>
+                    <h2 style="text-align: center; font-size: 23px; color: #000; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase">Sepet</h2>
+                    <h4 style="text-align: center; font-size: 17px; padding: 5px; margin: 6px;" id="sonuc2" runat="server"></h4>
+                    <table style="border: 1px medium #333; text-align: center; word-spacing: normal; vertical-align: middle;">
                         <tr>
-                            <td style="text-align: left; width: 10px;">ID
-                            </td>
-                            <td style="text-align: left; width: 30px;">AD
-                            </td>
-                            <td style="text-align: left; width: 30px;">FIYAT
-                            </td>
-                            <td style="text-align: left; width: 30px;">ADET
-                            </td>
-                            <td style="text-align: left; width: 50px;">TUTAR
-                            </td>
-                            <td style="text-align: left; width: 10px;">SİL
-                            </td>
+                            <th class="auto-style4">Ürün Resim</th>
+
+
+                            <th class="auto-style5">Ürün İsim</th>
+
+
+                            <th class="auto-style3">Ürün Fiyat</th>
+
+
                         </tr>
-                    </table>
-                </HeaderTemplate>
-                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                <ItemTemplate>
-                    <table style="text-align: center; width: 400px;">
-                        <tr>
-                            <td style="text-align: left; width: 30px;">
-                                <%# Eval("id") %>
-                            </td>
-                            <td style="text-align: left; width: 100px;">
-                                <%# Eval("isim") %>
-                            </td>
-                            <td style="text-align: left; width: 30px;">
-                                <%# Eval("fiyat") %>
-                            </td>
-                            <td style="text-align: left; width: 15px;">
-                                <%# Eval("adet") %>
-                            </td>
-                            <td style="text-align: left; width: 50px;">
-                                <%# Eval("tutar") %>
-                            </td>
-                            <td style="text-align: center; width: 10px;">
-                                <asp:LinkButton ID="btnSil" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="sil">Sil</asp:LinkButton>
-                            </td>
-                        </tr>
-                    </table>
-                </ItemTemplate>
-            </asp:DataList>
-            <br />
-            <div>
-                <asp:Label ID="lblToplam" runat="server"></asp:Label>
+                       
+                       <%-- <asp:DataList ID="DataList1" runat="server">
+                            <ItemTemplate>
+                                 <tr>
+                                    <th>
+                                        <asp:Image  ImageUrl='<%# Eval("Fotolar") %>' Width="150px" ID="Image1" runat="server" />
+                                    </th>
+
+                                    <th style="font-size: 18px; font-weight: bold; text-align: center; margin: 0 auto;"><%# Eval("UrunAd")%></th>
+                                    <th style="font-size: 18px; font-weight: bold; text-align: center;"><%# Eval("UrunFiyat","{0:c}")%></th>
+                                </tr>
+                            </ItemTemplate>
+                        </asp:DataList>--%>
+                        <asp:DataList ID="DataList1" runat="server" >
+                            <ItemTemplate>
+                                <tr>
+                                    <th>
+                                        <asp:Image  ImageUrl='<%# Eval("Fotolar") %>' Width="150px" ID="Image1" runat="server" />
+                                    </th>
+
+                                    <th class="auto-style5" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;"><%# Eval("UrunAd")%></th>
+                                    <th class="auto-style3"style="font-size: 18px; vertical-align:middle; font-weight: bold; text-align: center; initial-letter:normal; padding:10px;  "><%# Eval("UrunFiyat","{0:c}")%></th>
+                                </tr>
+                            </ItemTemplate>
+                        </asp:DataList>
+                     </table>   
+               <%--     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Db_GiyimConnectionString %>" SelectCommand="SELECT uyeid, Tbl_Sepetler.urunid,Fotolar, urunAD, UrunFiyat FROM Tbl_Sepetler,Tbl_urunler WHERE uyeid=<%# Eval() %> and Tbl_Sepetler.urunid=Tbl_urunler.urunid"></asp:SqlDataSource>   
+                 --%>
+                </div>
+
             </div>
+
         </div>
+
+
     </div>
-
-
-
-
 
 </asp:Content>

@@ -106,6 +106,7 @@
 
     </header>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
     </asp:ContentPlaceHolder>
     <footer class="sectionArea">
         <div class="footeritemcontainer">

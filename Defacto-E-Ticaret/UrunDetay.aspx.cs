@@ -12,12 +12,16 @@ namespace Defacto_E_Ticaret
     public partial class UrunDetay : System.Web.UI.Page
     {
         Sqlbaglanti bgl = new Sqlbaglanti();
+        string id;
+        
+
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
 
-            string id = Request.QueryString["Urunid"];
+            id = Request.QueryString["Urunid"];
             SqlDataAdapter komut = new SqlDataAdapter("Select * From Tbl_urunler where Urunid=" + id, bgl.baglanti());
             DataTable dt = new DataTable();
             komut.Fill(dt);
@@ -34,12 +38,13 @@ namespace Defacto_E_Ticaret
 
 
         }
+        
 
 
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if(IsValid)
+            if (IsValid)
             {
                 string id = Request.QueryString["Urunid"];
                 SqlCommand komut = new SqlCommand("insert into Tbl_Yorumlar(Yorumadsoyad,YorumMail,Yorumİçerik,Urunid) values(@p1,@p2,@p3,@p4) ", bgl.baglanti());
@@ -49,20 +54,21 @@ namespace Defacto_E_Ticaret
                 komut.Parameters.AddWithValue("@p4", id);
                 komut.ExecuteNonQuery();
                 Label1.Visible = true;
-                Label1.Text="Yorumunuz başarı ile yapılmıştır. Teşekkür ederiz";
+                Label1.Text = "Yorumunuz başarı ile yapılmıştır. Teşekkür ederiz";
                 bgl.baglanti().Close();
                 txt_adEkle.Text = "";
                 txt_mailEKle.Text = "";
                 txt_icerik.Text = "";
-                
+
             }
-            
+
 
 
 
 
 
         }
+
 
     }
 }
