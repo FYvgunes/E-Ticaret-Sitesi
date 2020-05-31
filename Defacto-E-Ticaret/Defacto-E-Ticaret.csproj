@@ -130,6 +130,7 @@
     <Content Include="img\unnamed.png" />
     <Content Include="jquery-3.5.1.min.js" />
     <Content Include="KadınReyon.aspx" />
+    <Content Include="Odemeİslemi.aspx" />
     <Content Include="scripts\Jquery.js" />
     <Content Include="scripts\slider.js" />
     <Content Include="Sepet.aspx" />
@@ -285,6 +286,13 @@
     </Compile>
     <Compile Include="Kullanıcı2.Master.designer.cs">
       <DependentUpon>Kullanıcı2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Odemeİslemi.aspx.cs">
+      <DependentUpon>Odemeİslemi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Odemeİslemi.aspx.designer.cs">
+      <DependentUpon>Odemeİslemi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sepet.aspx.cs">

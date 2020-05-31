@@ -27,7 +27,10 @@ namespace Defacto_E_Ticaret
 
             if (Session["Kullanici"] == null)
             {
-
+                //Button1.Visible = false;
+                sonuc5.Visible = false;
+                div.Visible = false;
+               
                 sonuc.InnerHtml = "Kullanıci Girişi yapılmamış";
                 sonuc2.InnerHtml = "Kullanıcı Girişine Yönlendiriliyorsunuz";
                 sonuc2.InnerHtml += "<meta http-equiv='refresh' content='3;url=UserLogin.aspx'>";
@@ -36,6 +39,10 @@ namespace Defacto_E_Ticaret
             {
 
                 //urun daha önceden eklenmiş mi
+                //Button1.Visible = true;
+                sonuc5.Visible = true;
+                div.Visible = true;
+             
 
                 string id = Session["id"].ToString();
                 //SqlCommand komut = new SqlCommand("Select Fotolar,UrunAd,Urunfiyat From  Tbl_Sepetler,Tbl_urunler  where Tbl_urunler.Uyeid=Tbl_sepetler.Uyeid and  Tbl_urunler.Uyeid=" + , bgl.baglanti());
@@ -104,5 +111,6 @@ namespace Defacto_E_Ticaret
 
         }
 
+        
     }
 }

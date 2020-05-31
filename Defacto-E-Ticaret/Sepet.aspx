@@ -59,7 +59,7 @@
 
                     
                     <h3 style="text-align: center; color: red; font-size: 20px; padding: 5px; margin: 6px;" id="sonuc" runat="server"></h3>
-                    <h1 style="text-align: center; font-size: 33px; color: #e2965f; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase"><i class="fas fa-shopping-bag" style="padding-right:10px"></i>Sepet</h1>
+                    <h1 id="sonuc5" runat="server" style="text-align: center; font-size: 33px; color: #e2965f; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-transform: uppercase"><i class="fas fa-shopping-bag" style="padding-right:10px"></i>Sepet</h1>
                     <h4 style="text-align: center; font-size: 17px; padding: 5px; margin: 6px;" id="H1" runat="server"></h4>
 
                     <h3 style="font-size: 15px; text-align: center; padding: 5px; margin: 6px; color: green;" id="sonuc3" runat="server"></h3>
@@ -114,11 +114,14 @@
                         </asp:DataList>
                         
                      </table>   
-                    <div style="margin-left:530px; padding:10px; margin-top:5px; background:#eb9454;border-radius:5px; font-weight:bold; color:#fff;">
+                    <div id="div" runat="server" style="margin-left:530px; padding:10px; margin-top:5px; background:#eb9454;border-radius:5px; font-weight:bold; color:#fff;" >
 
                     <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;" ID="Label2" runat="server" Text="Sepet Toplam : "></asp:Label>
                     <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;" ID="Label1" runat="server" Text="Label"> </asp:Label>
-             </div>
+                </div>
+                    <div>
+                        <a href="Odemeİslemi.aspx?odeme=<%# Eval("Odemeid") %>" class="formbtn" style="width:200px; margin-left:530px; text-align:center; font-size:18px;">Satın Al</a>
+                    </div>
                         <%--    
                     </div> <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Db_GiyimConnectionString %>" SelectCommand="SELECT uyeid, Tbl_Sepetler.urunid,Fotolar, urunAD, UrunFiyat FROM Tbl_Sepetler,Tbl_urunler WHERE uyeid=<%# Eval() %> and Tbl_Sepetler.urunid=Tbl_urunler.urunid"></asp:SqlDataSource>   
                  --%>
