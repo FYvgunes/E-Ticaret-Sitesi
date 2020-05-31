@@ -115,7 +115,7 @@
 
                         <div style="width: 375px; height: 70px;">
 
-
+                             
                             <asp:Image Height="100%" CssClass="dene" ImageUrl='<%# Eval("Fotolar") %>' ID="Image3" runat="server" />
                             <a tabindex="2">
                                 <asp:Image Height="100%" ImageUrl='<%# Eval("fotolar2") %>' ID="Image1" runat="server" />
@@ -153,7 +153,8 @@
                                 &nbsp;<p class="Samp1"><%# Eval("UrunBeden") %></p>
                             </div>
                             <div class="deneme1">
-                                <p><%#Eval("UrunFiyat","{0:c}") %> </p>
+                                <p>
+                                    <asp:Label ID="Label2" runat="server" Text='<%#Eval("UrunFiyat","{0:c}") %>'></asp:Label> </p>
                             </div>
 
 

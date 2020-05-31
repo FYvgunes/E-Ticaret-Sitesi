@@ -12,6 +12,8 @@ namespace Defacto_E_Ticaret
     public partial class SepeteEkle : System.Web.UI.Page
     {
         Sqlbaglanti bgl = new Sqlbaglanti();
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             resim.Visible = false; //tik resmini gizler
@@ -46,7 +48,6 @@ namespace Defacto_E_Ticaret
                         komut3.Fill(dt);
                         tekrar.DataSource = dt;
                         tekrar.DataBind();
-
                         sonuc.InnerHtml = "Ürün Zaten Eklenmiş";
                         sonuc2.InnerHtml = "Alişverişe Devam";
 
@@ -55,24 +56,31 @@ namespace Defacto_E_Ticaret
                     }
                     else
                     {
+
                         //eklenmemiş ise sepete ekle
                         SqlCommand komut2 = new SqlCommand("insert into Tbl_Sepetler(uyeid,urunid) values(@p1,@p2)", bgl.baglanti());
                         komut2.Parameters.AddWithValue("@p1", Session["id"].ToString());
                         komut2.Parameters.AddWithValue("@p2", urunid);
+
                         komut2.ExecuteNonQuery();
                         bgl.baglanti().Close();
                         sonuc3.InnerHtml = "Ürün Sepete Eklenmiştir";
                         resim.Visible = true;
-
                     }
 
+
                 }
+
+
+
+
 
             }
 
 
-
-
         }
+
     }
+
 }
+

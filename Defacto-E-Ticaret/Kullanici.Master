@@ -103,11 +103,11 @@
                 </div>
             </div>
         </div>
-
-    </header>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
     </asp:ContentPlaceHolder>
+    </header>
+   
     <footer class="sectionArea">
         <div class="footeritemcontainer">
             <div class="footertop">

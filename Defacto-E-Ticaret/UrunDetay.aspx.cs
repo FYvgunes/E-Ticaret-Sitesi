@@ -36,7 +36,7 @@ namespace Defacto_E_Ticaret
             rptYorum.DataBind();
 
 
-
+            
         }
         
 

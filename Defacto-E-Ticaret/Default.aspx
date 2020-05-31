@@ -17,10 +17,11 @@
                         <h3  style="font-size: 17px; color: #3a3a3a; font-weight: 700; text-align: center;"><%# Eval("UrunAd")%></h3>
                     </div>
                     <div class="UrunFiyat">
-                        <h3 style=" text-align: center; font-size: 15px; font-weight:700; color:#f55214;"><%# Eval("UrunFiyat","{0:c}")%></h3>
+                        <h3 style=" text-align: center; font-size: 15px; font-weight:700; color:#f55214;">
+                            <asp:Label ID="Label3" runat="server" Text=""><%# Eval("UrunFiyat","{0:c}")%></asp:Label></h3>
                     </div>
                     <div style="text-align: center;">
-                        <a href="SepeteEkle.aspx?urunid=<%# Eval("Urunid") %>" style="padding: 10px; background: #f55214; color: #fff; border-radius: 3px; border: 1px solid #ed9d1e; text-decoration: none; font-size: 15px; letter-spacing: 1px;" ><i style="padding-right: 2px" class="fas fa-shopping-bag"></i>Sepet</a>
+                        <a href="UrunDetay.aspx?urunid=<%#Eval("Urunid") %>" style="padding: 10px; background: #f55214; color: #fff; border-radius: 3px; border: 1px solid #ed9d1e; text-decoration: none; font-size: 15px; letter-spacing: 1px;" ><i style="padding-right: 2px" class="fas fa-tag"></i>Ürün Detay</a>
                     </div>
                 </div>
 
