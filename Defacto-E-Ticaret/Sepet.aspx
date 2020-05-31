@@ -4,41 +4,51 @@
     <style type="text/css">
         .auto-style3 {
             width: 252px;
-            padding:5px;
-            font-size:16px;
-            letter-spacing:1px;
-            text-transform:uppercase;
-            margin-left:10px;
-
-
-        }
-
-        .auto-style4 {
-            width: 135px;
-            padding:5px;
-            text-align: center;
-             font-size:16px;
-            letter-spacing:1px;
-            text-transform:uppercase;
-              margin-left:10px;
-        }
-
-        .auto-style5 {
-            width: 450px;
-            padding:5px;
-             font-size:16px;
-            letter-spacing:1px;
-            text-transform:uppercase;
-              margin-left:10px;
-        }
-        .auto-style6 {
-            width: 120px;
             padding: 5px;
             font-size: 16px;
             letter-spacing: 1px;
             text-transform: uppercase;
             margin-left: 10px;
         }
+
+        .auto-style4 {
+            width: 150px;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+        .auto-style5 {
+            width: 450px;
+            padding: 5px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+
+        .auto-style6 {
+            width: 270px;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+        .auto-style7 {
+            margin-left: 560px;
+            text-align: center;
+            background: #e2965f;
+            margin: 5px;
+            width: 230px;
+        }
+           
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -83,7 +93,7 @@
                         </asp:DataList>--%>
                         <asp:DataList ID="DataList1" runat="server" >
                             <ItemTemplate>
-                                <tr style="background:#b0c1b0; padding:10px;">
+                                <tr style="background:#b0c1b0; padding:10px; border-radius:10px; border-left:5px solid #e46363;">
                                     <th>
                                         <asp:Image  ImageUrl='<%# Eval("Fotolar") %>' Width="150px" ID="Image1" runat="server" />
                                     </th>
@@ -104,9 +114,13 @@
                         </asp:DataList>
                         
                      </table>   
+                    <div style="margin-left:530px; padding:10px; margin-top:5px; background:#eb9454;border-radius:5px; font-weight:bold; color:#fff;">
 
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-               <%--     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Db_GiyimConnectionString %>" SelectCommand="SELECT uyeid, Tbl_Sepetler.urunid,Fotolar, urunAD, UrunFiyat FROM Tbl_Sepetler,Tbl_urunler WHERE uyeid=<%# Eval() %> and Tbl_Sepetler.urunid=Tbl_urunler.urunid"></asp:SqlDataSource>   
+                    <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;" ID="Label2" runat="server" Text="Sepet Toplam : "></asp:Label>
+                    <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;" ID="Label1" runat="server" Text="Label"> </asp:Label>
+             </div>
+                        <%--    
+                    </div> <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Db_GiyimConnectionString %>" SelectCommand="SELECT uyeid, Tbl_Sepetler.urunid,Fotolar, urunAD, UrunFiyat FROM Tbl_Sepetler,Tbl_urunler WHERE uyeid=<%# Eval() %> and Tbl_Sepetler.urunid=Tbl_urunler.urunid"></asp:SqlDataSource>   
                  --%>
                 </div>
 

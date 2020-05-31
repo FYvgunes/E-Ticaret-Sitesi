@@ -31,9 +31,9 @@
                     <h3 style="font-size: 15px; text-align: center; padding: 5px; margin: 6px; color: green;" id="sonuc3" runat="server"></h3>
 
 
-                    <table style="border: 1px medium #333;">
+                    <table runat="server" style="border: 1px medium #333;">
                         <tr>
-                            <th class="auto-style4">Ürün Resim</th>
+                            <th class="auto-style4" >Ürün Resim</th>
 
 
                             <th class="auto-style5">Ürün İsim</th>

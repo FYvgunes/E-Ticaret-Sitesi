@@ -17,7 +17,7 @@ namespace Defacto_E_Ticaret
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            Mukerrer();
+
             resim.Visible = false; //tik resmini gizler
             resim1.Visible = false;
             //Ürünid Geldimi
@@ -33,10 +33,12 @@ namespace Defacto_E_Ticaret
                     resim1.Visible = true;
                     sonuc.InnerHtml = "Kullanıci Girişi yapılmamış";
                     sonuc2.InnerHtml = "Kullanıcı Girişine Yönlendiriliyorsunuz";
+                    
                     sonuc2.InnerHtml += "<meta http-equiv='refresh' content='3;url=UserLogin.aspx'>";
                 }
                 else
                 {
+                    Mukerrer();
                     string urunid = Request.QueryString["urunid"];
                     SqlCommand komut3 = new SqlCommand("Select * From Tbl_urunler where urunid =" + urunid, bgl.baglanti());
                     SqlDataReader rd = komut3.ExecuteReader();
@@ -73,87 +75,37 @@ namespace Defacto_E_Ticaret
 
 
 
-                    ////urun daha önceden eklenmiş mi
 
-                    //SqlCommand komut3 = new SqlCommand("Select * From Tbl_sepetler  where Uyeid=@p1 and Urunid = @p2" , bgl.baglanti());
-                    //komut3.Parameters.AddWithValue("@p1", Session["id"].ToString());
-                    //komut3.Parameters.AddWithValue("@p2", urunid);
-                    //SqlDataReader rd = komut3.ExecuteReader();
-                    //if(rd.Read())
-                    //{
-                    //    SqlCommand komut4 = new SqlCommand("Select * From Tbl_urunler where urunid=" + urunid, bgl.baglanti());
-                    //    komut4.ExecuteNonQuery();
-                    //    sonuc.InnerHtml = "Ürün Zaten Eklenmiş";
-                    //    sonuc2.InnerHtml = "Alişverişe Devam";
-
-                    //    resim1.Visible = false;
-                    //    bgl.baglanti().Close();
-
-                    //}
-                    //else
-                    //{
-
-                    //}
-
-                    //string fiyat = Request.QueryString["UrunFiyat"];
-                    //SqlCommand komut = new SqlCommand("Select *From Tbl_Sepetler where uyeid=@p1 and Urunid=@p2", bgl.baglanti());
-                    //komut.Parameters.AddWithValue("@p1", Session["id"].ToString());
-                    //komut.Parameters.AddWithValue("@p2", urunid);
-                    //SqlDataReader rd = komut.ExecuteReader();
-                    //if (rd.Read())
-                    //{
-                    //    SqlDataAdapter komut3 = new SqlDataAdapter("select * From Tbl_urunler where urunid=" + urunid, bgl.baglanti());
-                    //    DataTable dt = new DataTable();
-                    //    komut3.Fill(dt);
-                    //    tekrar.DataSource = dt;
-                    //    tekrar.DataBind();
-                    //    sonuc.InnerHtml = "Ürün Zaten Eklenmiş";
-                    //    sonuc2.InnerHtml = "Alişverişe Devam";
-
-                    //    resim1.Visible = false;
-                    //    bgl.baglanti().Close();
-                    //}
-                    //else
-                    //{
-
-                    //    //eklenmemiş ise sepete ekle
-
-                    //}
 
 
                 }
 
 
-
-
-
             }
-
-
-        }
-        public void Mukerrer()
-        {
-            string Urunidd = Request.QueryString["Urunid"];
-            string id = Session["id"].ToString();
-            SqlCommand komut2 = new SqlCommand("Select*From Tbl_Sepetler Where Urunid=@p1 And Uyeid=@p2 ", bgl.baglanti());
-            komut2.Parameters.AddWithValue("@p1", Urunidd);
-            komut2.Parameters.AddWithValue("@p2",id);
-            SqlDataReader rd = komut2.ExecuteReader();
-            if (rd.Read())
+             void Mukerrer()
             {
-                Durum = false;
+                string Urunidd = Request.QueryString["Urunid"];
+                string id = Session["id"].ToString();
+                SqlCommand komut2 = new SqlCommand("Select*From Tbl_Sepetler Where Urunid=@p1 And Uyeid=@p2 ", bgl.baglanti());
+                komut2.Parameters.AddWithValue("@p1", Urunidd);
+                komut2.Parameters.AddWithValue("@p2", id);
+                SqlDataReader rd = komut2.ExecuteReader();
+                if (rd.Read())
+                {
+                    Durum = false;
+
+                }
+                else
+                {
+                    Durum = true;
+                }
+                bgl.baglanti().Close();
+
 
             }
-            else
-            {
-                Durum = true;
-            }
-            bgl.baglanti().Close();
-
 
         }
 
     }
-
 }
 
