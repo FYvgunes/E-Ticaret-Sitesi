@@ -20,7 +20,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="Aciklama3">
-            <div class="cizgi3">
+            <div class="cizgi3" style="margin-left:100px;">
                 <div>
                     <p style="text-align: center">
                         <img src="img/logo-ok-png-2.png" style="width: 200px; height: 200px;" runat="server" id="resim" /><img src="img/unnamed.png" style="width: 150px; text-align: center; height: 150px;" runat="server" id="resim1" />&nbsp;
@@ -46,8 +46,8 @@
 
 
 
-                        <asp:Repeater runat="server" ID="tekrar">
-                            <ItemTemplate>
+                      <%--  <asp:Repeater runat="server" ID="tekrar">
+                            <ItemTemplate>--%>
                                 
                                 <tr>
                                     <th>
@@ -57,10 +57,10 @@
                                     <th style="font-size: 18px; vertical-align: middle;  font-weight: bold; text-align: center; margin: 0 auto;">
                                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("UrunAd")%>'></asp:Label></th>
                                     <th style="font-size: 18px; vertical-align: middle; font-weight: bold; text-align: center;">
-                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("UrunFiyat","{0:c}")%>'></asp:Label></th>
+                                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("UrunFiyat")%>'></asp:Label></th>
                                 </tr>
-                            </ItemTemplate>
-                        </asp:Repeater>
+                            <%--</ItemTemplate>
+                        </asp:Repeater>--%>
 
                         
 

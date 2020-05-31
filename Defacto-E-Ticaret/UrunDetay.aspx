@@ -154,7 +154,7 @@
                             </div>
                             <div class="deneme1">
                                 <p>
-                                    <asp:Label ID="Label2" runat="server" Text='<%#Eval("UrunFiyat","{0:c}") %>'></asp:Label> </p>
+                                    <asp:Label ID="Label2" runat="server" Text='<%#Eval("UrunFiyat","{0:c}") %>'></asp:Label></p>
                             </div>
 
 
