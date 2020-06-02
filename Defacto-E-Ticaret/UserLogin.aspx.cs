@@ -22,15 +22,15 @@ namespace Defacto_E_Ticaret
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if(txt_kullaniciAd.Text=="" || Txt_Sifre.Text=="")
+            if(txt_mail.Text=="" || Txt_Sifre.Text=="")
             {
                 Label1.Visible = true;
                 Label1.Text = "Alanlar Boş geçilemez";
             }
             else
             {
-                SqlCommand komut = new SqlCommand("select * From Tbl_uyeler where Uyead=@p1 and UyeSifre=@p2", bgl.baglanti());
-                komut.Parameters.AddWithValue("@p1", txt_kullaniciAd.Text);
+                SqlCommand komut = new SqlCommand("select * From Tbl_uyeler where UyeMail=@p1 and UyeSifre=@p2", bgl.baglanti());
+                komut.Parameters.AddWithValue("@p1", txt_mail.Text);
                 komut.Parameters.AddWithValue("@p2", Txt_Sifre.Text);
                 SqlDataReader rd = komut.ExecuteReader();
                 if (rd.Read())
@@ -44,7 +44,7 @@ namespace Defacto_E_Ticaret
                 {
                     Label1.Visible = true;
 
-                    Label1.Text = "Şifre Veya Kullanıcı Adı Eşleşmiyor ";
+                    Label1.Text = "Şifre Veya Mail Adı Eşleşmiyor ";
                 }
             }
            

@@ -31,22 +31,8 @@
         }
 
 
-        .auto-style6 {
-            width: 270px;
-            padding: 5px;
-            text-align: center;
-            font-size: 16px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-left: 10px;
-        }
-
-        .auto-style7 {
-            margin-left: 560px;
-            text-align: center;
-            background: #e2965f;
-            margin: 5px;
-            width: 230px;
+        .auto-style8 {
+            width: 266px;
         }
            
     </style>
@@ -65,8 +51,8 @@
                     <h3 style="font-size: 15px; text-align: center; padding: 5px; margin: 6px; color: green;" id="sonuc3" runat="server"></h3>
                     
                     <h4 style="text-align: center; font-size: 17px; padding: 5px; margin: 6px;" id="sonuc2" runat="server"></h4>
-                    <table style="border: 1px medium #333; text-align: center; word-spacing: normal; vertical-align: middle;">
-                        <tr>
+                    <table  style="border: 1px medium #333; text-align: center; word-spacing: normal; vertical-align: middle;">
+                        <tr id="table" runat="server" >
                             <th class="auto-style4">Ürün Resim</th>
 
 
@@ -114,13 +100,13 @@
                         </asp:DataList>
                         
                      </table>   
-                    <div id="div" runat="server" style="margin-left:530px; padding:10px; margin-top:5px; background:#eb9454;border-radius:5px; font-weight:bold; color:#fff;" >
+                    <div id="div" runat="server" style="margin-left:530px; border-radius:5px;  color:#fff;" class="auto-style8" >
 
-                    <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;" ID="Label2" runat="server" Text="Sepet Toplam : "></asp:Label>
-                    <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;" ID="Label1" runat="server" Text="Label"> </asp:Label>
+                    <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;  padding:10px; margin-top:5px; background:#eb9454; font-weight:bold; color:#fff;" ID="Label2" runat="server"  Text="Sepet Toplam : "></asp:Label>
+                    <asp:Label class="auto-style4" style="font-size: 18px; vertical-align:middle; text-align: center; padding:10px; margin: 0 auto;  padding:10px; margin-top:5px; background:#eb9454; font-weight:bold; color:#fff;" ID="Label1" runat="server" Text="Label"> </asp:Label>
                 </div>
-                    <div>
-                        <a href="Odemeİslemi.aspx?odeme=<%# Eval("Odemeid") %>" class="formbtn" style="width:200px; margin-left:530px; text-align:center; font-size:18px;">Satın Al</a>
+                    <div id="div2" runat="server">
+                        <a href="Odemeİslemi.aspx?odeme=<%# Eval("Odemeid") %>"  class="formbtn" style="width:200px; margin-left:530px; text-align:center; font-size:18px;">Satın Al</a>
                     </div>
                         <%--    
                     </div> <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Db_GiyimConnectionString %>" SelectCommand="SELECT uyeid, Tbl_Sepetler.urunid,Fotolar, urunAD, UrunFiyat FROM Tbl_Sepetler,Tbl_urunler WHERE uyeid=<%# Eval() %> and Tbl_Sepetler.urunid=Tbl_urunler.urunid"></asp:SqlDataSource>   

@@ -11,7 +11,7 @@ namespace Defacto_E_Ticaret
 {
 
 
-    public partial class UserLogin
+    public partial class SifremiUnuttum
     {
 
         /// <summary>
@@ -24,22 +24,13 @@ namespace Defacto_E_Ticaret
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txt_mail control.
+        /// txt_kullaniciAd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_mail;
-
-        /// <summary>
-        /// Txt_Sifre control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txt_Sifre;
+        protected global::System.Web.UI.WebControls.TextBox txt_kullaniciAd;
 
         /// <summary>
         /// Button1 control.

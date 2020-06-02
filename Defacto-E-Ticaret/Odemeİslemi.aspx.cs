@@ -77,6 +77,9 @@ namespace Defacto_E_Ticaret
                 komut.ExecuteNonQuery();
                 Label1.Visible = true;
                 Label1.Text = "Ödemeniz başarı bir şekilde gerçekleşti";
+                txtCardName.Text = "";
+                txtCardNumber.Text = "";
+                txtCCV.Text = "";
 
                 //Ödeme işlemi tamanlandığında o kişiyi silecek
                 SqlCommand komut2 = new SqlCommand("Delete FROM Tbl_Sepetler WHERE uyeid=@p6", bgl.baglanti());

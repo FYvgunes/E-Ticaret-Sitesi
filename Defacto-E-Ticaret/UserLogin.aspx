@@ -18,9 +18,9 @@
                         <h2 style="text-align: center; font-size: 25px; color: #182ea7; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Giriş Yap</h2>
                         <hr style="border: 1px solid #1d2a74" />
                         <div class="Deneme2">
-                            <p class="FormPE">Kullanıcı Adı</p>
+                            <p class="FormPE">Mail</p>
                             <p>
-                                <asp:TextBox CssClass="textbax" ID="txt_kullaniciAd" runat="server"></asp:TextBox>
+                                <asp:TextBox CssClass="textbax" ID="txt_mail" runat="server"></asp:TextBox>
 
                             </p>
                         </div>
@@ -35,6 +35,7 @@
                            <div style="text-align:center;">
                                <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Giriş Yap" OnClick="Button1_Click" />
                                <asp:Label ForeColor="Red" Font-Size="15px" Visible="false" ID="Label1" runat="server" Text="Label"></asp:Label>
+                               <p><a href="SifremiUnuttum.aspx" style="text-align:right; margin-left:170px; color:#829fff;">Şifremi Unuttum</a></p>
                            </div>
                         </div>
                     </form>
