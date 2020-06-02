@@ -44,7 +44,7 @@ namespace Defacto_E_Ticaret
                 {
                     Label1.Visible = true;
 
-                    Label1.Text = "Kayıt Yok ";
+                    Label1.Text = "Şifre Veya Kullanıcı Adı Eşleşmiyor ";
                 }
             }
            

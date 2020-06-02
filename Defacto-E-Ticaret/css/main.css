@@ -651,6 +651,7 @@ ul.list1 li:hover .list3 {
     text-align: center;
     margin-left: 195px;
 }
+
 .galleryTop {
     text-align: center;
 }
@@ -666,13 +667,11 @@ ul.list1 li:hover .list3 {
     margin-top: 10px;
     position: relative;
     left: 0;
-    
     animation: sliderAnimation 30s infinite;
 }
 
     .galleryslideritem img {
         width: 11%;
-        
         float: left;
         height: 300px;
     }
@@ -738,7 +737,6 @@ ul.list1 li:hover .list3 {
         padding: 25px;
         height: 100%;
         width: 100%;
-       
     }
 
 .Deneme2 {
@@ -785,7 +783,7 @@ ul.list1 li:hover .list3 {
         border-radius: 7px;
         padding: 25px;
         height: 100%;
-        width: 150%;
+        width: 170%;
         margin-left: 120px;
     }
 
@@ -826,7 +824,7 @@ ul.list1 li:hover .list3 {
         width: 100%;
         margin-left: 260px;
     }
-    /*Contant*/
+/*Contant*/
 /*
 #contactSlider {
     height: 250px;
@@ -909,7 +907,34 @@ ul.list1 li:hover .list3 {
     text-align: center;
     margin-left: 225px;
 }
-.td{
-    text-align:left;
 
+.td {
+    text-align: left;
+}
+
+.label1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: green;
+    margin-left: 260px;
+}
+
+.sepetbtn {
+    width: 200px;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 18px;
+    background:#0a560a;
+    color:#fff;
+    padding:5px;
+
+    
+}
+.sepetbtn:hover
+{
+    background:#68b968;
 }
