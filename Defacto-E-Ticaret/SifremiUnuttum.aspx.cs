@@ -6,70 +6,119 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
-using System.Net;
+using System.Text;
 using System.Net.Mail;
-
+using System.Net;
+using System.IO;
 
 namespace Defacto_E_Ticaret
 {
     public partial class SifremiUnuttum : System.Web.UI.Page
     {
         Sqlbaglanti bgl = new Sqlbaglanti();
-        Metodlar Klas = new Metodlar();
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btngiris_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * From Tbl_uyeler where UyeMail=@uyemail", bgl.baglanti());
-            if (ConnectionState.Closed == bgl.baglanti().State)
-                bgl.baglanti().Open();
-            komut.Parameters.AddWithValue("@uyemail", txt_kullaniciAd.Text);
-            SqlDataReader rd = komut.ExecuteReader();
-            if (rd.Read())
-            {
-                MailMessage mesaj = new MailMessage();
-                mesaj.To.Add(new MailAddress(txt_kullaniciAd.Text));
-                mesaj.From = new MailAddress(txt_kullaniciAd.Text, "Yönetim Mail Adresiniz ");
-                mesaj.Body = "E-mail=" + rd["uyeMail"].ToString() + "\n" + "KullaniciAd:" + rd["UyeAd"].ToString() + "\n" + "Şifre:" + rd["UyeSifre"].ToString() + "\b";
-                SmtpClient client = new SmtpClient();
-                client.Host = "smtp.gmail.com";
-                client.Port = 587;
-                client.Credentials = new NetworkCredential("Yönetim Mail Adresiniz ", "Mail Adresiniz Şifresi");
-                client.EnableSsl = true;
+            //    if(bgl.baglanti().State==ConnectionState.Closed)
+            //    {
+            //        bgl.baglanti().Open();
+            //    }
+            //    SqlCommand sorgu = new SqlCommand("Select * From Tbl_uyeler Where Uyemail=@p1", bgl.baglanti());
+            //    sorgu.Parameters.AddWithValue("@p1", txtmail.Text);
+            //    SqlDataReader rd = sorgu.ExecuteReader();
+            //    if(rd.Read())
+            //    {
 
+            //        MailMessage mesaj = new MailMessage();
+            //        mesaj.To.Add(new MailAddress(txtmail.Text));
+            //        mesaj.From = new MailAddress(txtmail.Text, "veysel.gns3623@gmail.com");
+            //        mesaj.Body = "E-Mail=" + rd["UyeMail"].ToString() + "\n" + "Kullanıcı adı" + rd["Uyead"].ToString() + "\n" + "Şifre :" + rd["UyeSifre"].ToString() + "\n";
+            //        SmtpClient client = new SmtpClient();
+            //        client.Host = "smtp.gmail.com";
+            //        client.Port = 587;
+            //        client.Credentials = new NetworkCredential("veysel.gns3623@gmail.com", "1q2w3e4r5T*-?");
+
+
+            //        try
+            //        {
+            //            client.Send(mesaj);
+            //            lbmesaj.Text = "Şifreniz Mail Adresinine Gönderilmiştir. Teşekkür ederiz";
+            //            H1.InnerHtml += "<meta http-equiv='refresh' content='5;url=Default.aspx'>";
+            //        }
+            //        catch
+            //        {
+            //            lbmesaj.Text = "Mesaj Gönderirken Hata oluştu";
+            //            H1.InnerHtml += "<meta http-equiv='refresh' content='3;url=SifremiUnuttum.aspx'>";
+            //        }
+
+            //    }
+            //    else
+            //    {
+            //        lbmesaj.Text = "E-Mail Adrsi Kayıtlı Degil";
+
+            //    }
+            //    rd.Close();
+            //    txtmail.Text = "";
+            //    System.Threading.Thread.Sleep(2000);
+            string gonderadi, gondersifre, gondermail;
+            SqlCommand komut = new SqlCommand("select * From Tbl_uyeler where Uyemail='" + txtmail.Text + "'", bgl.baglanti());
+            SqlDataReader oku = null;
+            oku = komut.ExecuteReader();
+            if (oku.Read())
+            {
+                gonderadi = oku["Uyead"].ToString();
+                gondermail = oku["uyeMail"].ToString();
+                gondersifre = oku["Uyesifre"].ToString();
+
+                bgl.baglanti().Close();
+
+                MailMessage ePosta = new MailMessage();
+                ePosta.From = new MailAddress("Mailadresiniz@gmail.com");
+                ePosta.To.Add(gondermail);
+                ePosta.Subject = "Şifre Hatırlatma";
+                ePosta.Body = "Sayın," + gonderadi + "nŞifreniz:" + gondersifre;
+                SmtpClient smtp = new SmtpClient();
+                smtp.Credentials = new System.Net.NetworkCredential("Veysel.gns3623@gmail.com", "Şifre Hatırlatma");
+                smtp.Port = 587;
+                smtp.Host = "smtp.gmail.com";
+
+
+                smtp.EnableSsl = true;
+
+
+                object userState = ePosta;
                 try
                 {
-                    client.Send(mesaj);
-                    Label1.Text = "Şifreniz E-Mail Adresinize gönderildi";
-                    Response.Redirect("Default.aspx");
+                    smtp.SendAsync(ePosta, (object)ePosta);
                 }
                 catch
                 {
-                    Response.Write("Mesaj Göndeririken bir hata oluştu");
-                    Response.Redirect("SifremiUnuttum.aspx");
-
+                    lbmesaj.Text = "Mesaj Gönderirken Hata oluştu";
+                    H1.InnerHtml += "<meta http-equiv='refresh' content='3;url=SifremiUnuttum.aspx'>";
+                }
+                finally
+                {
+                    bgl.baglanti().Close();
+                    lbmesaj.Text = "Şifreniz Mail Adresinine Gönderilmiştir. Teşekkür ederiz";
+                    H1.InnerHtml += "<meta http-equiv='refresh' content='5;url=Default.aspx'>";
 
                 }
-
             }
             else
             {
-                Label1.Text = "E-Mail Adresini Kayıtlı Değil";
-
+                lbmesaj.Text = "E-Mail Adrsi Kayıtlı Degil";
             }
-            rd.Close();
-            txt_kullaniciAd.Text = "";
-            System.Threading.Thread.Sleep(2000);
+           
+
+
+
 
         }
 
-        private class alarmVer
-        {
-        }
+
     }
 }

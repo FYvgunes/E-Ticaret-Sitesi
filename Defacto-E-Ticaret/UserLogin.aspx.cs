@@ -14,11 +14,16 @@ namespace Defacto_E_Ticaret
         Sqlbaglanti bgl = new Sqlbaglanti();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["Kullanici"] != null)
+            if (Session["Kullanici"] != null)
             {
                 Response.Redirect("Default.aspx");
             }
+            if (Request.Cookies["KullaniciADi"] != null)
+                Label1.Text = Request.Cookies["Kullaniciadi"].Value;
+            else
+                Label1.Text = "Sizi Unuttuk";
         }
+          
 
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -47,8 +52,19 @@ namespace Defacto_E_Ticaret
                     Label1.Text = "Şifre Veya Mail Adı Eşleşmiyor ";
                 }
             }
+            if(CheckBox1.Checked)
+            {
+                Response.Cookies["KullaniciAdi"].Value = txt_mail.Text;
+                Response.Cookies["KullaniciAdi"].Expires=DateTime.Now.AddDays(2);
+                Response.Redirect("Default.aspx");
+            }
            
 
+
+        }
+
+        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }

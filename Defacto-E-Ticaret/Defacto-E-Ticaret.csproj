@@ -135,6 +135,7 @@
     <Content Include="scripts\slider.js" />
     <Content Include="Sepet.aspx" />
     <Content Include="SepeteEkle.aspx" />
+    <Content Include="SifremiUnuttum.aspx" />
     <Content Include="Sikayetler.aspx" />
     <Content Include="UrunDetay.aspx" />
     <Content Include="UserLogin.aspx" />
@@ -287,6 +288,7 @@
     <Compile Include="Kullanıcı2.Master.designer.cs">
       <DependentUpon>Kullanıcı2.Master</DependentUpon>
     </Compile>
+    <Compile Include="Metodlar.cs" />
     <Compile Include="Odemeİslemi.aspx.cs">
       <DependentUpon>Odemeİslemi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -308,6 +310,13 @@
     </Compile>
     <Compile Include="SepeteEkle.aspx.designer.cs">
       <DependentUpon>SepeteEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SifremiUnuttum.aspx.cs">
+      <DependentUpon>SifremiUnuttum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.aspx.designer.cs">
+      <DependentUpon>SifremiUnuttum.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sikayetler.aspx.cs">
       <DependentUpon>Sikayetler.aspx</DependentUpon>

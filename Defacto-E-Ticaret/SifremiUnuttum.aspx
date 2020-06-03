@@ -1,28 +1,31 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanıcı2.Master" AutoEventWireup="true" CodeBehind="SifremiUnuttum.aspx.cs" Inherits="Defacto_E_Ticaret.SifremiUnuttum" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SifremiUnuttum.aspx.cs" Inherits="Defacto_E_Ticaret.SifremiUnuttum" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
     <div class="container">
         <section>
             <div class="Aciklama2">
-                <div class="cizgi2">
+                <div class="cizgi2" style="width:315px;  margin-left:320px;">
+                   <h2 style="text-align: center; color: #0074c7; font-size: 20px; padding: 5px; margin: 6px;" id="sonuc" runat="server">Şifremi Unuttum</h2>
+                      <h3 style="text-align: center; color: red; font-size: 20px; padding: 5px; margin: 6px;" id="H1" runat="server"></h3>
                     <form id="form1" runat="server">
-                        <h2 style="text-align: center; font-size: 25px; color: #182ea7; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Şifremi Unuttum</h2>
-                        <hr style="border: 1px solid #1d2a74" />
-                        <div class="Deneme2">
-                            <p class="FormPE">Mail Adresiniz</p>
-                            <p>
-                                <asp:TextBox CssClass="textbax" ID="txt_kullaniciAd" runat="server"></asp:TextBox>
-
-                            </p>
-                        </div>
-                       <div class="deneme3">
-                           <div style="text-align:center;">
-                               <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Mail Yolla"  />
-                               <asp:Label ForeColor="Red" Font-Size="15px" Visible="false" ID="Label1" runat="server" Text="Label"></asp:Label>
-                               
-                           </div>
+                        <div>
+                            <asp:Label class="FormPE" ID="lblmail" runat="server" Text="Label">E-Mail Adresiniz</asp:Label>
+                            <br />
+                            <asp:TextBox CssClass="textbax" s ID="txtmail" runat="server"></asp:TextBox>
+                            <br />
+                            <br />
+                            <asp:Button CssClass="formbtn" ID="btngiris" runat="server" Text="Gönder" OnClick="btngiris_Click" />
+                            <br />
+                            <br />
+                            <asp:Label  ID="lbmesaj" runat="server" ></asp:Label>
                         </div>
                     </form>
                 </div>
@@ -30,4 +33,5 @@
         </section>
     </div>
 
-</asp:Content>
+</body>
+</html>

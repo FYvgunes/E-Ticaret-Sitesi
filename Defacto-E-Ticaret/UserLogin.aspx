@@ -34,7 +34,7 @@
                         <div class="deneme3">
                            <div style="text-align:center;">
                                <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Giriş Yap" OnClick="Button1_Click" />
-                               <asp:Label ForeColor="Red" Font-Size="15px" Visible="false" ID="Label1" runat="server" Text="Label"></asp:Label>
+                               <asp:Label ForeColor="Red" Font-Size="15px" Visible="false" ID="Label1" runat="server" Text="Label"></asp:Label><asp:CheckBox ID="CheckBox1" runat="server" Text="Beni Unutma" style="text-align:right; " OnCheckedChanged="CheckBox1_CheckedChanged" />
                                <p><a href="SifremiUnuttum.aspx" style="text-align:right; margin-left:170px; color:#829fff;">Şifremi Unuttum</a></p>
                            </div>
                         </div>
