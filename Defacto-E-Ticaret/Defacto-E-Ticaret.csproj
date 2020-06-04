@@ -77,8 +77,12 @@
     <Content Include="AdminUrunler.aspx" />
     <Content Include="AdminYorumDetay.aspx" />
     <Content Include="AdminYorumlar.aspx" />
+    <Content Include="Hakkimizda.aspx" />
+    <Content Include="Hakkimizdaa.aspx" />
     <Content Include="iletisim.aspx" />
+    <Content Include="img\2402542_810x458.jpg" />
     <Content Include="img\details-png-4.png" />
+    <Content Include="img\D_1463_CMYK.jpg" />
     <Content Include="img\finance.jpg" />
     <Content Include="img\iletişim-banner.png" />
     <Content Include="img\images.png" />
@@ -226,6 +230,20 @@
     </Compile>
     <Compile Include="AdminYorumlar.aspx.designer.cs">
       <DependentUpon>AdminYorumlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimizdaa.aspx.cs">
+      <DependentUpon>Hakkimizdaa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimizdaa.aspx.designer.cs">
+      <DependentUpon>Hakkimizdaa.aspx</DependentUpon>
     </Compile>
     <Compile Include="iletisim.aspx.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>

@@ -47,14 +47,14 @@
                 <div class="menu">
                         <ul class="list1">
                             <li><a href="Default.aspx">AnaSayfa</a></li>
-                            <li><a href="cars.html">Ürünler</a>
+                            <li><a href="Default.aspx">Ürünler</a>
                                 <ul class="list3">
                                     <li><a href="KadınReyon.aspx">Kadın</a></li>
                                     <li><a href="ErkekReyonu.aspx">Erkek</a></li>
                                     <li><a href="CocukReyon.aspx">Çoçuk</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">Hakkımızda</a></li>
+                            <li><a href="Hakkimizdaa.aspx">Hakkımızda</a></li>
                             <li><a href="iletisim.aspx">İletişim</a></li>
                         </ul>
                     </div>
