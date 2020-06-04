@@ -66,10 +66,10 @@
                 <div class="menu2">
                     <ul class="list2">
                         
-                        <li><a href="Sepet.aspx"><i class="fas fa-shopping-bag"></i>Sepet</a></li>
-                        <li><a href="UyeOl.aspx"><i class="fas fa-user"></i>Üye ol</a></li>
-                        <li><a href="UserLogin.aspx" id="girisid" runat="server"><i class="fas fa-sign-in-alt"></i>Giriş</a></li>
-                        <li><a href="UserOut.aspx" id="cikisid" runat="server"><i class="fas fa-sign-out-alt"></i>Çıkış</a></li>
+                        <li><a href="Sepet.aspx" style="color:#ff6a00"><i class="fas fa-shopping-bag"></i>Sepet</a></li>
+                        <li><a href="UyeOl.aspx" style="color:#ff6a00"><i class="fas fa-user"></i>Üye ol</a></li>
+                        <li><a href="UserLogin.aspx" id="girisid" style="color:#ff6a00" runat="server"><i class="fas fa-sign-in-alt"></i>Giriş</a></li>
+                        <li><a href="UserOut.aspx" id="cikisid" style="color:#ff6a00" runat="server"><i class="fas fa-sign-out-alt"></i>Çıkış</a></li>
                         <li><a style="font-size:15px; color:#ff6a00; margin-top:2px;" href="#" id="kull" runat="server"></a></li>
                     </ul>
                 </div>
@@ -92,10 +92,12 @@
                     <div class="footeritem">
                         <h3>DeFacto</h3>
                         <ul class="FooterLinks">
-                            <li><a href="#">Kurumsal</a></li>
-                            <li><a href="#">Kurumsal</a></li>
-                            <li><a href="#">Kurumsal</a></li>
-                            <li><a href="#">Kurumsal</a></li>
+                             <li><a href="Default.aspx">Anasayfa</a></li>
+                            <li><a href="ErkekReyonu.aspx">Ürünler</a></li>
+                            <li><a href="iletisim.aspx">İletişim</a></li>
+                            <li><a href="Sikayetler.aspx">Şikayetler</a></li>
+                            <li><a href="Hakkimizdaa.aspx">Hakkımızda</a></li>
+
 
                         </ul>
                     </div>
