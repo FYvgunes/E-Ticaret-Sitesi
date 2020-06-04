@@ -140,6 +140,8 @@
     <Content Include="UrunDetay.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserOut.aspx" />
+    <Content Include="Uyeler.aspx" />
+    <Content Include="UyelerDetay.aspx" />
     <Content Include="UyeOl.aspx" />
     <Content Include="Web.config" />
     <Content Include="webfonts\fa-brands-400.svg" />
@@ -346,6 +348,20 @@
     </Compile>
     <Compile Include="UserOut.aspx.designer.cs">
       <DependentUpon>UserOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler.aspx.cs">
+      <DependentUpon>Uyeler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyeler.aspx.designer.cs">
+      <DependentUpon>Uyeler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UyelerDetay.aspx.cs">
+      <DependentUpon>UyelerDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyelerDetay.aspx.designer.cs">
+      <DependentUpon>UyelerDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="UyeOl.aspx.cs">
       <DependentUpon>UyeOl.aspx</DependentUpon>

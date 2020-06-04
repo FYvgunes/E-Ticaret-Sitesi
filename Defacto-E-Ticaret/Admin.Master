@@ -119,6 +119,9 @@
                 <tr>
                     <td class="A_menuler_tr"><a style="color:#fff;" href="AdminUrunler.aspx">ÜRÜNLER</a></td>
                 </tr>
+                 <tr>
+                    <td class="A_menuler_tr"><a style="color:#fff;" href="Uyeler.aspx">ÜYELER</a></td>
+                </tr>
                 <tr>
                     <td class="A_menuler_tr"><a href="AdminYorumlar.aspx" style="color:#fff;">YORUMLAR</a> </td>
                 </tr>
