@@ -24,5 +24,7 @@ namespace Defacto_E_Ticaret
 
             }
         }
+
+       
     }
 }

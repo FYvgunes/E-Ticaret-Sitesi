@@ -3,6 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div class="container">
+                <div class="col2" style="margin-left: 250px; margin-top:10px;">
+                    <div style="float: right;">
+                    <asp:TextBox CssClass="text" ID="txt_Ara" runat="server"></asp:TextBox>  <asp:Button CssClass="btn" ID="btn_Ara" runat="server" Text="Ara" OnClick="btn_Ara_Click"  />
+                    </div>
+                </div>
+
+            </div>
     <div class="container2">
         <asp:Repeater ID="tekrarlayici" runat="server"  >
             <ItemTemplate>
