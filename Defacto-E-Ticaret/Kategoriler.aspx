@@ -39,7 +39,7 @@
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
                         </td>
                         <td  class="image_icon">
-                          <a href='ADMİN/KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid") %>'> <asp:Image  class="image_icon" ID="Image1" runat="server" ImageUrl="~/img/icon/update.png" /></a> 
+                          <a href='KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid") %>'> <asp:Image  class="image_icon" ID="Image1" runat="server" ImageUrl="~/img/icon/update.png" /></a> 
                         </td>
                         <td class="image_icon">
                           <a href="Kategoriler.aspx?Kategoriid=<%# Eval("Kategoriid")%> &islem=sil"> <asp:Image CssClass="image_icon" ID="Image2" runat="server" ImageUrl="~/img/icon/Delete.png" ImageAlign="Right" /></a>

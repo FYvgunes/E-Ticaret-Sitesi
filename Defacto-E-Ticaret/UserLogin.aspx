@@ -36,6 +36,9 @@
                                <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Giriş Yap" OnClick="Button1_Click" />
                                <asp:Label ForeColor="Red" Font-Size="15px" Visible="false" ID="Label1" runat="server" Text="Label"></asp:Label><asp:CheckBox ID="CheckBox1" runat="server" Text="Beni Unutma" style="text-align:right; " OnCheckedChanged="CheckBox1_CheckedChanged" />
                                <p><a href="SifremiUnuttum.aspx" style="text-align:right; margin-left:170px; color:#829fff;">Şifremi Unuttum</a></p>
+                               <br />
+                               <p>Üye Değil iseniz <a href="UyeOl.aspx" style="text-align:right; margin-left:10px; color:#829fff;">Üye Ol</a></p>
+
                            </div>
                         </div>
                     </form>

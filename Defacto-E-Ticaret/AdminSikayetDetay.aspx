@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="background:#2e9252; height:40px; margin-top:20px;margin-left:25px; text-align:center; align-items:center;">
-        <h4 style=" margin:10px; color:#fff; font-size:23px; text-align:center; text-transform:uppercase;padding:13px;  line-height:2px;">YORUM Detay</h4>
+        <h4 style=" margin:10px; color:#fff; font-size:23px; text-align:center; text-transform:uppercase;padding:13px;  line-height:2px;">Şikayet Detay</h4>
     </div>
     <table class="auto-style3">
         <tr>

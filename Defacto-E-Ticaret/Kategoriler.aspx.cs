@@ -45,7 +45,7 @@ namespace Defacto_E_Ticaret.ADMİN
         protected void Button1_Click(object sender, EventArgs e)
         {
             
-                SqlCommand komut = new SqlCommand("insert into Tbl_kategoriler(Kategoriad,KategoriAdet) values(@1,@p2p)", bgl.baglanti());
+                SqlCommand komut = new SqlCommand("insert into Tbl_kategoriler(Kategoriad,KategoriAdet) values(@p1,@p2)", bgl.baglanti());
                 komut.Parameters.AddWithValue("@p1", TextBox1.Text);
                 komut.Parameters.AddWithValue("@p2", TextBox2.Text);
                 komut.ExecuteNonQuery();

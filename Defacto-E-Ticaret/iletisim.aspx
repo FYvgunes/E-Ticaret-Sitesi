@@ -221,7 +221,7 @@
                 </div>
                
                 <div>
-                    <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Üye Ol" OnClick="Button1_Click1"  />
+                    <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Mesaj Yolla" OnClick="Button1_Click1"  />
 
                     <asp:Label CssClass="label" ID="Label1" runat="server" Visible="False" Font-Bold="True" Font-Size="Large"></asp:Label>
                 </div>
