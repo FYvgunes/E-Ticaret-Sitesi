@@ -40,12 +40,13 @@ namespace Defacto_E_Ticaret
         protected void Button1_Click(object sender, EventArgs e)
         {
             //Kayıtları guncellemek için kullanıyoruz
-            SqlCommand komut1 = new SqlCommand("Update Tbl_uyeler Set Uyead=@p1, Uyesifre=@p2, UyeAdres=@p3,UyeMail=@p4,UyeTel=@p5", bgl.baglanti());
+            SqlCommand komut1 = new SqlCommand("Update Tbl_uyeler Set Uyead=@p1, Uyesifre=@p2, UyeAdres=@p3,UyeMail=@p4,UyeTel=@p5 where Uyeid=@p6", bgl.baglanti());
             komut1.Parameters.AddWithValue("@p1", txt_Ad.Text);
-            komut1.Parameters.AddWithValue("@2", txt_sifre.Text);
+            komut1.Parameters.AddWithValue("@p2", txt_sifre.Text);
             komut1.Parameters.AddWithValue("@p3", txt_adres.Text);
             komut1.Parameters.AddWithValue("@p4", txt_mail.Text);
-            komut1.Parameters.AddWithValue("@p6", txt_telno.Text);
+            komut1.Parameters.AddWithValue("@p5", txt_telno.Text);
+            komut1.Parameters.AddWithValue("@p6", id);
             komut1.ExecuteNonQuery();
             Label1.Visible = true;
             Label1.Text = "Uye Bilgileri Güncellendi";

@@ -33,6 +33,15 @@ namespace Defacto_E_Ticaret
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Uyeol control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor Uyeol;
+
+        /// <summary>
         /// girisid control.
         /// </summary>
         /// <remarks>

@@ -37,7 +37,7 @@
                            <div style="text-align:center;">
                                <asp:Button CssClass="formbtn" ID="Button1" runat="server" Text="Giriş Yap" OnClick="Button1_Click" />
                                <asp:Label ForeColor="Red" Font-Size="15px" Visible="false" ID="Label1" runat="server" Text="Label" ></asp:Label>
-                           </div>
+                            </div>
                         </div>
                     </form>
                 </div>

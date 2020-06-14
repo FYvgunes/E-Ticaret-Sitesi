@@ -47,7 +47,7 @@
                     </p>
                     <p>
                         <asp:TextBox CssClass="textbax" ID="Txt_email" runat="server" TextMode="Email"></asp:TextBox>
-                        <asp:RequiredFieldValidator CssClass="Requ" ID="RequiredFieldValidator5" runat="server" ErrorMessage="E-Mail boş geçilemez" ControlToValidate="Txt_email"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator CssClass="Requ" ID="RequiredFieldValidator5" runat="server" ErrorMessage="E-Mail boş geçilemez" ControlToValidate="Txt_email" ></asp:RequiredFieldValidator>
 
                     </p>
                 </div>

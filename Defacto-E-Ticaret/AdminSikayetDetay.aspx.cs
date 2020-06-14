@@ -33,7 +33,7 @@ namespace Defacto_E_Ticaret
         protected void Button1_Click(object sender, EventArgs e)
         {
             
-            SqlCommand komut2 = new SqlCommand("Update Tbl_Sikaytler set SikayetAd=@p1,SikayetMail=@p2,SikayetKonu=@p3,Sikayeticerik=@4 where Sikayetid=@p5", bgl.baglanti());
+            SqlCommand komut2 = new SqlCommand("Update Tbl_Sikaytler set SikayetAd=@p1,SikayetMail=@p2,SikayetKonu=@p3,Sikayeticerik=@p4 where Sikayetid=@p5", bgl.baglanti());
             komut2.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut2.Parameters.AddWithValue("@p2", TextBox2.Text);
             komut2.Parameters.AddWithValue("@p3", TextBox3.Text);

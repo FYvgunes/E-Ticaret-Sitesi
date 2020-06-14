@@ -15,12 +15,14 @@ namespace Defacto_E_Ticaret
             {
                 kull.InnerHtml = "Merhaba Ziyaretçi";
                 cikisid.Visible = false;
+
             }
             else
             {
                 kull.InnerHtml = "Merhaba"+" " + Session["Kullanici"].ToString();
                 girisid.Visible = false;
                 cikisid.Visible = true;
+                Uyeol.Visible = false;
 
             }
         }

@@ -21,6 +21,8 @@ namespace Defacto_E_Ticaret
                 kull.InnerHtml = "Merhaba" + " " + Session["Kullanici"].ToString();
                 girisid.Visible = false;
                 cikisid.Visible = true;
+                uyeol.Visible = false;
+                
 
             }
         }
